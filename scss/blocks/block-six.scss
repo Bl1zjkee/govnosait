@@ -1,0 +1,35 @@
+.integrations {
+  background: var(--black);
+  padding-top: 90px;
+  padding-bottom: 180px;
+
+  h3 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 115%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+
+  &__img {
+    margin-top: 56px;
+  }
+}
+
+picture {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
+  img {
+    max-width: 223px;
+    height: 110px;
+  }
+
+  img:last-child {
+    max-width: 195px;
+    margin-left: 102px;
+    height: 90px;
+  }
+}

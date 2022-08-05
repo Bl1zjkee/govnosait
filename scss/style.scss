@@ -1,0 +1,22 @@
+//fonts
+@import "../font/cerapro/stylesheet.css";
+
+//color
+@import "components/color.scss";
+@import "components/input.scss";
+
+
+//swiper
+@import "vendors/swiper.scss";
+
+//mixins
+@import "./abstract/mixins.scss";
+
+//setting
+@import "../setting/reset.scss";
+@import "../setting/base.scss";
+
+
+
+//вёрстка
+@import "./blocks/allcss.scss";

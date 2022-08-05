@@ -1,0 +1,196 @@
+.application {
+  background: var(--white);
+  margin-top: 90px;
+  position: relative;
+  height: 666px;
+
+
+  h3 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 115%;
+    text-transform: uppercase;
+    color: var(--black);
+
+  }
+
+
+  &__data {
+
+  }
+
+  &__nav {
+    display: block;
+    margin-top: 46px;
+
+    hr {
+      display: block;
+      margin-left: 0;
+      max-width: 340px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 105%;
+      color: var(--black);
+      display: inline-block;
+      margin-left: 65px;
+      position: relative;
+      cursor: pointer;
+
+      &.active {
+        color: var(--blue);
+
+        &:before {
+          display: block;
+        }
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:before {
+        content: '';
+        background: var(--blue);
+        height: 4px;
+        width: 100%;
+        position: absolute;
+        top: 27px;
+        display: none;
+
+      }
+    }
+  }
+
+
+  &__inputs {
+    margin-top: 31px;
+    display: none;
+
+    &.active {
+      display: flex;;
+    }
+  }
+
+  &__input {
+    width: 100%;
+  }
+
+  &__img {
+    display: flex;
+
+    picture {
+      img {
+        max-width: 431px;
+        height: 431px;
+        position: absolute;
+        top: 81px;
+        right: 206px;
+      }
+
+    }
+  }
+
+  &__contacts {
+    position: relative;
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+
+  }
+
+  &__contact {
+    max-width: 461px;
+    width: 100%;
+    margin-top: 38px;
+
+    a {
+      margin-bottom: 17px;
+      display: flex;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 120%;
+      color: var(--black);
+      align-items: center;
+
+      &:nth-of-type(1) {
+        &:before {
+          content: '';
+          background-image: url("../icon/contact_navigator.svg");
+          width: 19px;
+          height: 24px;
+          display: inline-flex;
+          flex-shrink: 0;
+          margin-right: 11px;
+        }
+      }
+
+      &:nth-of-type(2) {
+        &:before {
+          content: '';
+          background-image: url("../icon/envelope.svg");
+          width: 27px;
+          height: 22px;
+          display: inline-flex;
+          flex-shrink: 0;
+          margin-right: 11px;
+
+        }
+      }
+
+      &:nth-of-type(3) {
+        &:before {
+          content: '';
+          background-image: url("../icon/telephone.svg");
+          width: 24px;
+          height: 24px;
+          display: inline-flex;
+          flex-shrink: 0;
+          margin-right: 11px;
+
+        }
+      }
+
+      &:nth-of-type(4) {
+        &:before {
+          content: '';
+          background-image: url("../icon/contact_telegram.svg");
+          width: 28px;
+          height: 24px;
+          display: inline-flex;
+          flex-shrink: 0;
+          margin-right: 11px;
+
+        }
+      }
+
+
+    }
+  }
+
+  &__map {
+    picture {
+      img {
+        max-width: 625px;
+        width: 100%;
+        height: 755px;
+        position: absolute;
+        right: -40px;
+        top: -244px;
+      }
+    }
+
+  }
+}
+
+.js-tab-contact {
+  &.active {
+    p {
+      color: red;
+    }
+  }
+}
