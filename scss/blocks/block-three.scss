@@ -2,6 +2,7 @@
   background: var(--white);
   padding: 90px 0px 105px 0px;
 
+
   h3 {
     font-family: var(--fonts);
     font-style: normal;
@@ -24,6 +25,13 @@
       color: var(--black);
       position: relative;
       display: inline-block;
+      &.active {
+        color: var(--blue);
+
+        &:before {
+          display: block;
+        }
+      }
 
       &:first-child {
         margin-left: 0;
@@ -37,7 +45,7 @@
         position: absolute;
         left: 0;
         bottom: -11px;
-        display: block;
+        display: none;
 
       }
 
@@ -46,36 +54,13 @@
 
   }
 
-  &__sales {
-    display: flex;
-    margin-top: 24px;
 
-    h3 {
-
-      font-style: normal;
-      font-weight: 400;
-      font-size: 25px;
-      line-height: 120%;
-      color: var(--white);
-      padding-top: 16px;
-      padding-left: 16px;
-    }
-
-    p {
-
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 140%;
-      color: var(--white);
-      display: none;
-      padding-top: 16px;
-      padding-left: 16px;
-    }
-  }
 
   &__sales {
     display: none;
+&.active{
+  display: flex;
+}
 
     h3 {
       font-style: normal;
@@ -234,7 +219,9 @@
   &__effectiveness {
     display: none;
     margin-top: 25px;
-
+&.active{
+  display: flex;
+}
   }
 
   &__effectiveness-img {
@@ -417,7 +404,10 @@
   &__customers {
     justify-content: space-between;
     margin-top: 27px;
-    display: flex;
+    display: none;
+    &.active{
+      display: flex;
+    }
 
   }
 
@@ -495,3 +485,4 @@
 .js-loyalty {
   display: none;
 }
+

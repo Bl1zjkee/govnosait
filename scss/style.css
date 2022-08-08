@@ -202,6 +202,11 @@ table {
   margin: 0 auto;
   padding: 0 40px;
 }
+@media (max-width: 1100px) {
+  .container {
+    padding: 0 16px;
+  }
+}
 
 .wrraper {
   max-width: 1280px;
@@ -224,8 +229,27 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 .main__logo-info img {
   margin-top: 49px;
 }
+@media (max-width: 540px) {
+  .main__logo-info img {
+    max-width: 90px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 540px) {
+  .main__img {
+    margin-top: 76px;
+  }
+}
+.main__img img {
+  width: 100%;
+}
 .main__info {
   margin-top: 40px;
+}
+@media (max-width: 540px) {
+  .main__info {
+    margin-top: 30px;
+  }
 }
 .main__info a {
   display: flex;
@@ -234,6 +258,11 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   line-height: 140%;
   color: var(--black);
   align-items: center;
+}
+@media (max-width: 540px) {
+  .main__info a {
+    font-size: 14px;
+  }
 }
 .main__info a:before {
   content: "";
@@ -258,11 +287,26 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .main__text-img {
+    flex-wrap: wrap;
+  }
+}
 .main__text {
   color: var(--black);
   display: inline-block;
   align-self: flex-end;
   max-width: 411px;
+}
+@media (max-width: 768px) {
+  .main__text {
+    order: 1;
+  }
+}
+@media (max-width: 540px) {
+  .main__text {
+    margin-top: 43px;
+  }
 }
 .main__text h1 {
   font-weight: 700;
@@ -271,11 +315,22 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+@media (max-width: 1100px) {
+  .main__text h1 {
+    font-size: 45px;
+  }
+}
 .main__text p {
   font-weight: 400;
   font-size: 30px;
   line-height: 120%;
 }
+@media (max-width: 1100px) {
+  .main__text p {
+    font-size: 26px;
+  }
+}
+
 .list {
   background: var(--black);
   padding-top: 90px;
@@ -393,6 +448,12 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   position: relative;
   display: inline-block;
 }
+.receive__nav p.active {
+  color: var(--blue);
+}
+.receive__nav p.active:before {
+  display: block;
+}
 .receive__nav p:first-child {
   margin-left: 0;
 }
@@ -404,33 +465,13 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   position: absolute;
   left: 0;
   bottom: -11px;
-  display: block;
+  display: none;
 }
 .receive__sales {
+  display: none;
+}
+.receive__sales.active {
   display: flex;
-  margin-top: 24px;
-}
-.receive__sales h3 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 120%;
-  color: var(--white);
-  padding-top: 16px;
-  padding-left: 16px;
-}
-.receive__sales p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 140%;
-  color: var(--white);
-  display: none;
-  padding-top: 16px;
-  padding-left: 16px;
-}
-.receive__sales {
-  display: none;
 }
 .receive__sales h3 {
   font-style: normal;
@@ -561,6 +602,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 .receive__effectiveness {
   display: none;
   margin-top: 25px;
+}
+.receive__effectiveness.active {
+  display: flex;
 }
 .receive__effectiveness-img {
   display: flex;
@@ -712,6 +756,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 .receive__customers {
   justify-content: space-between;
   margin-top: 27px;
+  display: none;
+}
+.receive__customers.active {
   display: flex;
 }
 .receive__customers-img {

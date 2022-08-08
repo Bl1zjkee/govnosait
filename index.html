@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>С вас 5000$</title>
     <link rel="stylesheet" href="scss/swiper-bundle.min.css">
     <link rel="stylesheet" href="scss/style.css">
+
 </head>
 <body>
 
@@ -127,16 +129,16 @@
         <div class="container">
             <h3>ЧТО ПОЛУЧИТЕ?</h3>
             <div class="receive__nav">
-                <p>Рост <br> продаж</p>
-                <p>Операционная<br>
+                <p data-receive = 'receive__sales' class="js-tab-contact active" >Рост <br> продаж</p>
+                <p data-receive = 'receive__effectiveness' class="js-tab-contact" >Операционная<br>
                     эффективность</p>
-                <p>Довольные<br>
+                <p data-receive = 'receive__customers' class="js-tab-contact">Довольные<br>
                     клиенты</p>
-                <p>Лояльные<br>
+                <p data-receive = '' class="js-tab-contact">Лояльные<br>
                     сотрудники</p>
             </div>
             <hr>
-            <div class="receive__sales">
+            <div class="receive__sales  allreceive active">
                 <div class="receive__sales-one">
                     <h3>B2B E-commerce</h3>
                     <p>Единая точка доступа
@@ -152,7 +154,7 @@
                 </div>
 
 
-                <div class="receive__sales-two">
+                <div class="receive__sales-two ">
                     <div class="receive__img-one">
                         <h3>
                             Product <br>
@@ -201,7 +203,7 @@
             </div>
 
 
-            <div class="receive__effectiveness">
+            <div class="receive__effectiveness  allreceive">
                 <div class="receive__effectiveness-img">
                     <div class="receive__effectiveness-img-one">
                         <h3>Configure, price, quote (CPQ)</h3>
@@ -269,7 +271,7 @@
 
             </div>
 
-            <div class="receive__customers">
+            <div class="receive__customers  allreceive">
                 <div class="receive__customers-img">
                     <div class="receive__customers-img-text-one">
                         <p>Долго</p>
@@ -300,37 +302,6 @@
             </div>
 
 
-            <div class="receive__customers js-loyalty">
-                <div class="receive__customers-img">
-                    <div class="receive__customers-img-text-one">
-                        <p>Скучно</p>
-                        <p>Нудно</p>
-                        <p>Долго</p>
-                    </div>
-                    <div class="receive__customers-img-text">
-                        <p>Быстро</p>
-                        <p>Легко</p>
-                        <p>Современно</p>
-                    </div>
-
-                </div>
-
-                <div class="receive__customers-text">
-                    <h3>Лояльные сотрудники</h3>
-                    <p>Если ваши сотрудники вынуждены тратить большую часть своего рабочего времени на выполнение
-                        однообразных задач, используя устаревшие IT-инструменты, в какой-то момент часть из них,
-                        наиболее активная, креативная
-                        и пассионарная перестаёт чувствовать
-                        своё развитие, у неё снижается мотивация, падает лояльность к компании.
-                        В такой ситуации, компания теряет деньги
-                        на неэффективном использовании возможностей своих людей, увеличивается текучка кадров,
-                        становится трудно привлекать новых сотрудников.
-                        Платформа Scope - это инструмент, который даёт возможность людям высвободить время на развитие
-                        компании и реализовать свой потенциал.</p>
-                    <h3>РОСТ ПОКАЗАТЕЛЯ ESI на <span>5-10 п.п. </span></h3>
-                </div>
-
-            </div>
 
 
         </div>
@@ -485,13 +456,13 @@
                 <h3>Оставить заявку</h3>
                 <div class="application__data">
                     <div class="application__nav">
-                        <p class="js-tab-contact active" >Свяжитесь со мной</p>
-                        <p class="js-tab-contact ">Контакты</p>
+                        <p  data-contact = 'application__inputs' class="js-tab-contact active" >Свяжитесь со мной</p>
+                        <p data-contact = 'application__contacts' class="js-tab-contact ">Контакты</p>
                         <hr>
                     </div>
                 </div>
 
-                <div class="application__inputs active">
+                <div class=" application__inputs allcontacts active">
                     <div class="application__input">
                         <input class="input" type="text" alt="" placeholder="Имя" value="">
                         <input class="input" type="text" alt="" placeholder="Телефон">
@@ -512,7 +483,7 @@
                     </div>
                 </div>
 
-                <div class="application__contacts">
+                <div class="application__contacts allcontacts">
                     <div class="application__contact">
                         <a href="">Москва, ул. Горбунова, д. 2, стр. 204, оф. В504</a>
                         <a href="">info@scope2b.ru</a>
