@@ -330,7 +330,6 @@ a, p, h1, h2, h3, h4, span, li, input, button {
     font-size: 26px;
   }
 }
-
 .list {
   background: var(--black);
   padding-top: 90px;
