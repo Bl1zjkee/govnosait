@@ -1,9 +1,11 @@
 .application {
   background: var(--white);
-  margin-top: 90px;
+padding-top: 90px;
   position: relative;
-  height: 666px;
+padding-left: 20px;
+  @media (max-width: $sm) {
 
+  }
 
   h3 {
     font-weight: 400;
@@ -12,6 +14,10 @@
     text-transform: uppercase;
     color: var(--black);
 
+    @media (max-width: $Mega-Extra-large) {
+      font-size: 40px;
+    }
+
   }
 
 
@@ -19,50 +25,6 @@
 
   }
 
-  &__nav {
-    display: block;
-    margin-top: 46px;
-
-    hr {
-      display: block;
-      margin-left: 0;
-      max-width: 340px;
-    }
-
-    p {
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 105%;
-      color: var(--black);
-      display: inline-block;
-      margin-left: 65px;
-      position: relative;
-      cursor: pointer;
-
-      &.active {
-        color: var(--blue);
-
-        &:before {
-          display: block;
-        }
-      }
-
-      &:first-child {
-        margin-left: 0;
-      }
-
-      &:before {
-        content: '';
-        background: var(--blue);
-        height: 4px;
-        width: 100%;
-        position: absolute;
-        top: 27px;
-        display: none;
-
-      }
-    }
-  }
 
 
   &__inputs {
@@ -88,6 +50,16 @@
         position: absolute;
         top: 81px;
         right: 206px;
+        @media (max-width: $Extra-large) {
+          max-width: 250px;
+          height: 250px;
+        }
+        @media (max-width: $lg) {
+          right: 25px;
+        }
+        @media (max-width: $md) {
+          display: none;
+        }
       }
 
     }
@@ -99,6 +71,10 @@
 
     &.active {
       display: flex;
+      justify-content: space-between;
+      @media (max-width:$Extra-large ) {
+        display: block;
+      }
     }
 
   }
@@ -173,28 +149,36 @@
   }
 
   &__map {
+margin-top: -221px;
+    max-width: 625px;
+    width: 100%;
+    @media (max-width: $Extra-large) {
+      margin-top: 0;
+    }
     picture {
       img {
         max-width: 625px;
         width: 100%;
-        height: 755px;
+        height: 100vh;
         position: absolute;
-        right: -40px;
+        right: 0;
         top: -244px;
+        @media (max-width: $Mega-Extra-large) {
+          top: -221px;
+        }
+        @media (max-width: $Extra-large) {
+          margin-left: 0;
+          position: inherit;
+
+        }
+      }
+
+      @media (max-width: $Extra-large) {
+   display: block;
+
       }
     }
 
   }
 }
 
-.js-tab-contact {
-  &.active {
-    p {
-      color: red;
-    }
-  }
-}
-
-.test{
-
-}

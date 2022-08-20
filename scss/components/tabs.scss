@@ -1,0 +1,57 @@
+@import "../abstract/mixins.scss";
+
+.tab {
+  display: block;
+  margin-top: 46px;
+  hr {
+    display: block;
+    margin-left: 0;
+    max-width: 340px;
+    @media (max-width: $esm) {
+      max-width: 275px;
+    }
+
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 105%;
+    color: var(--black);
+    display: inline-block;
+    margin-left: 65px;
+    position: relative;
+    cursor: pointer;
+    @media (max-width: $esm) {
+      font-size: 15px;
+    }
+
+    &.active {
+      color: var(--blue);
+
+      &:before {
+        display: block;
+      }
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:before {
+      content: '';
+      background: var(--blue);
+      height: 4px;
+      width: 100%;
+      position: absolute;
+      bottom: -11px;
+      display: none;
+
+    }
+  }
+}
+.tabsoff{
+  @media (max-width: $md) {
+    display: none;
+  }
+}

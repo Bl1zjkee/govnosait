@@ -1,0 +1,48 @@
+.reviews {
+  background: var(--white);
+  padding-top: 90px;
+  padding-bottom: 82px;
+  @media (max-width: $lg) {
+    padding-bottom: 45px;
+    padding-top: 45px;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 115%;
+    text-transform: uppercase;
+    color: var(--black);
+  }
+
+  p {
+    color: var(--black);
+    text-align: justify;
+  }
+
+  &__review {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:$Mega-Extra-large ) {
+      display: block;
+    }
+  }
+}
+.list__paragraph{
+  h3{
+    font-size: 30px;
+    text-align: justify;
+  }
+}
+.ends{
+  @media (max-width:$Mega-Extra-large ) {
+    margin-top: 30px;
+  }
+
+}
+.end{
+  @media (max-width: $Mega-Extra-large) {
+    justify-content: center;
+  }
+
+}

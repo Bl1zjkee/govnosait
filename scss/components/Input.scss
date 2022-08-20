@@ -2,7 +2,7 @@
   display: block;
   border: 1px solid #020D2B;
   border-radius: 29px;
-  max-width: 413px;
+  max-width: 431px;
   width: 100%;
   padding:12px 0 10px 16px ;
   margin-bottom: 10px;
@@ -13,14 +13,17 @@
   color: var(--black);
   &::placeholder{
     color: var(--black);
-  }
 
+  }
+@media (max-width: 400px) {
+max-width: 329px;
+}
 
 }
 textarea{
   border: 1px solid #020D2B;
   border-radius: 29px;
-  max-width: 425px;
+  max-width: 431px;
   width: 100%;
   font-style: normal;
   font-weight: 400;
@@ -29,6 +32,15 @@ textarea{
   font-family: var(--fonts);
   margin-bottom: 35px;
   height: 100px;
+  padding-top: 12px;
+  padding-left: 16px;
+  &::placeholder{
+    color: var(--black);
+  }
+  @media (max-width: 400px) {
+    max-width: 329px;
+  }
+
 }
 
 button{
@@ -42,6 +54,7 @@ button{
 padding: 14px 63px;
   border: none;
   display: flex;
+  margin-bottom: 90px;
   &:hover{
     background: var(--button-hover);
   }

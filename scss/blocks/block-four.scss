@@ -4,6 +4,9 @@
   flex-wrap: wrap;
   padding-top: 90px;
   padding-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 
   h2, h3, li {
     font-weight: 400;
@@ -13,43 +16,99 @@
     color: #FFFFFF;
   }
 
+  @media (max-width: $md) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    h2 {
+      font-size: 31px;
+    }
+  }
+
   &__works {
     display: flex;
     flex-wrap: wrap;
+    @media (max-width: $md) {
+      display: block;
+    }
   }
 
   &__list {
 
     display: flex;
     flex-basis: 50%;
+    @media (max-width: $md) {
+      display: block;
+    }
 
     img {
       max-width: 126px;
       align-self: flex-start;
       margin-top: 65px;
+      position: relative;
+      @media (max-width: $Mega-Extra-large) {
+        max-width: 80px;
+      }
     }
 
     h3 {
       font-size: 35px;
       line-height: 120%;
       width: 100%;
+      @media (max-width: $Mega-Extra-large) {
+        font-size: 20px;
+      }
     }
   }
 
   &__list-text {
     margin-left: 36px;
     margin-top: 56px;
+    position: relative;
+    z-index: 1;
+    @media (max-width: $md) {
+      margin-left: 0;
+      margin-top: 15px;
+    }
 
     ul {
       margin-left: 30px;
       margin-top: 20px;
+      @media (max-width: $md) {
+        margin-top: 10px;
+      }
 
       li {
         font-size: 18px;
         line-height: 140%;
         list-style: inherit;
+        text-transform: none;
+        @media (max-width: $Mega-Extra-large) {
+          font-size: 15px;
+        }
 
       }
     }
   }
+}
+
+.cir7{
+   max-width: 295px;
+   width: 100%;
+   height: 289px;
+   position: absolute;
+   bottom: 33px;
+   left: -75px;
+   border: 2px solid #1A243F;
+   border-radius: 50%;
+ }
+.cir8{
+  max-width: 535px;
+  width: 100%;
+  height: 524px;
+  position: absolute;
+  top: 19px;
+  right: -120px;
+  border: 2px solid #1A243F;
+  border-radius: 50%;
+  z-index: 0;
 }

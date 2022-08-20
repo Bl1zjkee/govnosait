@@ -1,19 +1,58 @@
 .main {
   padding-bottom: 45px;
   background-color: var(--white);
+  position: relative;
 
   &__logo-info {
     display: flex;
     justify-content: space-between;
 
+     a{
+       margin-top: 49px;
 
-    img {
-      margin-top: 49px;
-    }
+       picture{
+       img {
+         margin-left: 0;
+         max-width: 188px;
+         height: 40px;
+       }
+     }
+       @media (max-width: $md) {
+         picture{
+           img{
+             max-width: 90px;
+             height: 19px;
+           }
+         }
+         margin-top: 30px;
+       }
+   }
   }
 
+  &__img{
+    position: absolute;
+    top: 86px;
+    right: 0;
+    @media (max-width: $md) {
+      margin-top: 76px;
+    }
+    picture{
+
+      a{
+        img{
+
+          max-width: 947px;
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+    }
+  }
   &__info {
     margin-top: 40px;
+    @media (max-width: $md) {
+      margin-top: 30px;
+    }
 
     a {
       display: flex;
@@ -22,6 +61,10 @@
       line-height: 140%;
       color: var(--black);
       align-items: center;
+      margin-top: 0;
+      @media (max-width: $md) {
+        font-size: 14px
+      }
 
       &:before {
         content: '';
@@ -30,6 +73,12 @@
         width: 28px;
         height: 22px;
         margin-right: 6px;
+        @media (max-width: $md) {
+          width: 20px;
+          height: 16px;
+          background-size: cover;
+          background-position: center;
+        }
       }
 
       &:first-child {
@@ -42,6 +91,12 @@
           width: 24px;
           height: 24px;
           margin-right: 9px;
+          @media (max-width: $md) {
+            width: 18px;
+            height: 18px;
+            background-size: cover;
+            background-position: center;
+          }
         }
 
       }
@@ -59,6 +114,9 @@
     display: inline-block;
     align-self: flex-end;
     max-width: 411px;
+    margin-top: 292px;
+    position: relative;
+    z-index: 1;
 
     h1 {
       font-weight: 700;
@@ -66,12 +124,22 @@
       line-height: 115%;
       text-transform: uppercase;
       margin-bottom: 10px;
+      @media (max-width: $md) {
+        font-size: 35px;
+        line-height: 115%;
+        white-space: pre-line;
+      }
     }
 
     p {
       font-weight: 400;
       font-size: 30px;
       line-height: 120%;
+      @media (max-width: $md) {
+        font-size: 20px;
+        line-height: 120%;
+        white-space: pre-line;
+      }
 
     }
   }
