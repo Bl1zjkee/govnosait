@@ -21,7 +21,7 @@
 
 .input {
   display: block;
-  border: 1px solid #020D2B;
+  border: 1px solid var(--black);
   border-radius: 29px;
   max-width: 431px;
   width: 100%;
@@ -32,9 +32,10 @@
   font-size: 15px;
   line-height: 120%;
   color: var(--black);
+  font-family: var(--inter);
 }
 .input::placeholder {
-  color: var(--black);
+  color: rgba(72, 72, 72, 0.8);
 }
 @media (max-width: 400px) {
   .input {
@@ -43,31 +44,30 @@
 }
 
 textarea {
-  border: 1px solid #020D2B;
+  border: 1px solid var(--black);
   border-radius: 29px;
-  max-width: 431px;
+  max-width: 430px;
+  font-family: var(--inter);
   width: 100%;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 120%;
-  font-family: var(--fonts);
   margin-bottom: 35px;
   height: 100px;
-  padding-top: 12px;
-  padding-left: 16px;
+  padding: 12px 0 0 16px;
 }
 textarea::placeholder {
   color: var(--black);
 }
 @media (max-width: 400px) {
   textarea {
-    max-width: 329px;
+    max-width: 330px;
   }
 }
 
 button {
-  background: #2727FF;
+  background: var(--blue);
   border-radius: 29px;
   font-style: normal;
   font-weight: 400;
@@ -78,13 +78,14 @@ button {
   border: none;
   display: flex;
   margin-bottom: 90px;
+  font-family: var(--inter);
 }
 button:hover {
   background: var(--button-hover);
 }
 
 .tab {
-  display: block;
+  display: flex;
   margin-top: 46px;
 }
 .tab hr {
@@ -130,6 +131,15 @@ button:hover {
   bottom: -11px;
   display: none;
 }
+.tab p:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -2px;
+}
 
 @media (max-width: 768px) {
   .tabsoff {
@@ -165,7 +175,7 @@ button:hover {
 
 .swiper-button-next {
   color: var(--blue);
-  top: 94%;
+  top: 96%;
 }
 .swiper-button-next:after {
   content: "";
@@ -187,7 +197,7 @@ button:hover {
 .swiper-button-prev {
   color: var(--blue);
   left: 650px;
-  top: 94%;
+  top: 96%;
 }
 .swiper-button-prev:after {
   content: "";
@@ -214,6 +224,8 @@ button:hover {
 
 .swiper-pagination {
   z-index: 1;
+  position: initial;
+  margin-top: 60px;
 }
 
 .swiper-pagination-bullet {
@@ -272,16 +284,21 @@ button:hover {
 
 .visible {
   left: 0 !important;
+  position: absolute;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
   left: 325px;
-  bottom: 26px;
 }
 @media (max-width: 1260px) {
   .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
     left: 0;
   }
+}
+
+.reviews-pagination {
+  position: sticky;
+  bottom: 20px;
 }
 
 .on {
@@ -400,7 +417,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
     margin-top: 76px;
   }
 }
-.main__img picture a img {
+.main__img picture img {
   max-width: 947px;
   width: 100%;
   margin-left: 0;
@@ -545,6 +562,12 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 .list__photo {
   margin-right: 30px;
 }
+.list__photo picture img {
+  max-width: 124px;
+  width: 100%;
+  height: 124px;
+  border-radius: 50%;
+}
 @media (max-width: 960px) {
   .list__photo picture img {
     display: block;
@@ -556,6 +579,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   line-height: 120%;
   color: var(--white);
   margin-bottom: 5px;
+  white-space: pre-line;
 }
 .list__paragraph p {
   font-weight: 400;
@@ -563,10 +587,12 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   line-height: 140%;
   color: var(--white);
   max-width: 379px;
+  white-space: pre-line;
 }
 .list__paragraph p:last-child {
   margin-top: 17px;
   max-width: 584px;
+  white-space: pre-line;
 }
 .list__wrapper {
   margin-top: 84px;
@@ -663,7 +689,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   right: 25px;
   bottom: -16px;
 }
-.list__number h5 {
+.list__number span {
   font-family: var(--inter);
   font-style: normal;
   font-weight: 400;
@@ -673,7 +699,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   color: var(--greygrey);
 }
 @media (max-width: 768px) {
-  .list__number h5 {
+  .list__number span {
     font-size: 100px;
     line-height: 121px;
   }
@@ -946,6 +972,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   display: none;
   margin-top: 25px;
   position: relative;
+  overflow: hidden;
 }
 .receive__effectiveness.active {
   display: flex;
@@ -1081,6 +1108,8 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   margin-left: 30px;
   max-width: 431px;
   width: 100%;
+  z-index: 2;
+  position: relative;
 }
 @media (max-width: 768px) {
   .receive__effectiveness-text {
@@ -1123,7 +1152,6 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .receive__customers.active {
   display: flex;
-  justify-content: center;
 }
 .receive__customers-img {
   background-image: url("../img/Customers_img.png");
@@ -1266,6 +1294,88 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 .receive__next > .next {
   color: var(--blue);
 }
+.receive__loyalty {
+  justify-content: space-between;
+  margin-top: 27px;
+  display: none;
+}
+.receive__loyalty.active {
+  display: flex;
+}
+.receive__loyalty-img {
+  background-image: url("../img/Customers_img.png");
+  max-width: 723px;
+  width: 100%;
+  height: 433px;
+  background-size: cover;
+  position: relative;
+  margin-top: 80px;
+}
+@media (max-width: 1260px) {
+  .receive__loyalty-img {
+    display: none;
+  }
+}
+.receive__loyalty-img-text-one {
+  position: absolute;
+  top: 32%;
+  left: 14%;
+}
+.receive__loyalty-img-text-one p {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 120%;
+  color: #020D2B;
+  opacity: 0.2;
+}
+.receive__loyalty-img-text {
+  position: absolute;
+  top: 32%;
+  right: 7%;
+  display: block;
+  text-align: right;
+}
+.receive__loyalty-img-text p {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 120%;
+  color: #020D2B;
+}
+.receive__loyalty-text {
+  max-width: 431px;
+  width: 100%;
+}
+.receive__loyalty-text h3 {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--black);
+}
+@media (max-width: 768px) {
+  .receive__loyalty-text h3 {
+    font-size: 30px;
+  }
+}
+.receive__loyalty-text h3:last-child {
+  margin-top: 40px;
+}
+.receive__loyalty-text h3 span {
+  color: var(--red);
+}
+@media (max-width: 768px) {
+  .receive__loyalty-text h3 span {
+    font-size: 30px;
+  }
+}
+.receive__loyalty-text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--black);
+  margin-top: 20px;
+  white-space: pre-line;
+}
 
 .ons {
   display: block;
@@ -1323,11 +1433,11 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   height: 27px;
 }
 
-.h3 {
+.text_h3 {
   margin-top: 25px;
 }
 
-.cir6 {
+.circle6 {
   max-width: 498px;
   width: 100%;
   height: 488px;
@@ -1338,7 +1448,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   border-radius: 50%;
 }
 @media (max-width: 768px) {
-  .cir6 {
+  .circle6 {
     max-width: 295px;
     height: 289px;
     top: 571px;
@@ -1444,7 +1554,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   }
 }
 
-.cir7 {
+.circle7 {
   max-width: 295px;
   width: 100%;
   height: 289px;
@@ -1455,7 +1565,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   border-radius: 50%;
 }
 
-.cir8 {
+.circle8 {
   max-width: 535px;
   width: 100%;
   height: 524px;
@@ -1586,7 +1696,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   }
 }
 
-.cir8 {
+.circle8 {
   max-width: 653px;
   width: 100%;
   height: 632px;
@@ -1597,7 +1707,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   border: 2px solid #1A243F;
 }
 
-.cir9 {
+.circle9 {
   max-width: 341px;
   width: 100%;
   height: 335px;
@@ -1778,7 +1888,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   z-index: 2;
 }
 
-.cir {
+.circle {
   position: absolute;
   top: 36px;
   left: -35px;
@@ -1789,7 +1899,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   border: 2px solid #1A243F;
 }
 
-.cir2 {
+.circle2 {
   position: absolute;
   bottom: 96px;
   left: 179px;
@@ -1800,12 +1910,12 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   border: 2px solid #1A243F;
 }
 @media (max-width: 768px) {
-  .cir2 {
+  .circle2 {
     display: none;
   }
 }
 
-.cir3 {
+.circle3 {
   position: absolute;
   bottom: 64px;
   right: -35px;
@@ -1816,7 +1926,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   border: 2px solid #1A243F;
 }
 
-.cir4 {
+.circle4 {
   position: absolute;
   top: 146px;
   right: 213px;
@@ -1827,7 +1937,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   border: 2px solid #1A243F;
 }
 
-.cir5 {
+.circle5 {
   position: absolute;
   top: -209px;
   right: -194px;
@@ -1838,7 +1948,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   border: 2px solid #1A243F;
 }
 @media (max-width: 768px) {
-  .cir5 {
+  .circle5 {
     display: none;
   }
 }

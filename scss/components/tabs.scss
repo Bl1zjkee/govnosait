@@ -1,7 +1,7 @@
 @import "../abstract/mixins.scss";
 
 .tab {
-  display: block;
+  display: flex;
   margin-top: 46px;
   hr {
     display: block;
@@ -46,6 +46,16 @@
       position: absolute;
       bottom: -11px;
       display: none;
+
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: -20px;
+      left: -20px;
+      right: -20px;
+      bottom: -2px;
 
     }
   }

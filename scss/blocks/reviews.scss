@@ -23,7 +23,7 @@
   &__review {
     display: flex;
     justify-content: space-between;
-    @media (max-width:$Mega-Extra-large ) {
+    @media (max-width:$mel-1260 ) {
       display: block;
     }
   }
@@ -35,13 +35,13 @@
   }
 }
 .ends{
-  @media (max-width:$Mega-Extra-large ) {
+  @media (max-width:$mel-1260 ) {
     margin-top: 30px;
   }
 
 }
 .end{
-  @media (max-width: $Mega-Extra-large) {
+  @media (max-width: $mel-1260) {
     justify-content: center;
   }
 

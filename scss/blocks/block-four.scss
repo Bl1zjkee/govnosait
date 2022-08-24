@@ -45,7 +45,7 @@
       align-self: flex-start;
       margin-top: 65px;
       position: relative;
-      @media (max-width: $Mega-Extra-large) {
+      @media (max-width: $mel-1260) {
         max-width: 80px;
       }
     }
@@ -54,7 +54,7 @@
       font-size: 35px;
       line-height: 120%;
       width: 100%;
-      @media (max-width: $Mega-Extra-large) {
+      @media (max-width: $mel-1260) {
         font-size: 20px;
       }
     }
@@ -82,7 +82,7 @@
         line-height: 140%;
         list-style: inherit;
         text-transform: none;
-        @media (max-width: $Mega-Extra-large) {
+        @media (max-width: $mel-1260) {
           font-size: 15px;
         }
 
@@ -91,7 +91,7 @@
   }
 }
 
-.cir7{
+.circle7{
    max-width: 295px;
    width: 100%;
    height: 289px;
@@ -101,7 +101,7 @@
    border: 2px solid #1A243F;
    border-radius: 50%;
  }
-.cir8{
+.circle8{
   max-width: 535px;
   width: 100%;
   height: 524px;

@@ -31,14 +31,14 @@
 }
 .swiper-button-next{
   color: var(--blue) ;
-  top: 94%;
+  top: 96%;
   &:after{
     content: '';
     background-image: url("../icon/swiper_next.svg");
     width: 16px;
     height: 27px;
   }
-  @media (max-width: $Mega-Extra-large) {
+  @media (max-width: $mel-1260) {
    right: 40%;
   }
   @media (max-width: $lg) {
@@ -48,7 +48,7 @@ display: none;
 .swiper-button-prev{
   color: var(--blue) ;
   left: 650px;
-  top: 94%;
+  top: 96%;
   &:after{
     content: '';
     background-image: url("../icon/swiper_next.svg");
@@ -56,7 +56,7 @@ display: none;
     height: 27px;
     transform: rotate(180deg);
   }
- @media (max-width: $Mega-Extra-large) {
+ @media (max-width: $mel-1260) {
    left: 40%;
  }
   @media (max-width: $lg) {
@@ -69,6 +69,8 @@ display: none;
 }
 .swiper-pagination{
   z-index: 1;
+  position: initial;
+  margin-top: 60px;
 
 }
 .swiper-pagination-bullet{
@@ -118,19 +120,23 @@ display: block;
 }
 .visible{
   left: 0!important;
+  position: absolute;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
   left: 325px;
-  bottom:26px;
-@media (max-width: $Mega-Extra-large) {
+
+@media (max-width: $mel-1260) {
   left: 0;
 }
 }
 
 
 
-
+.reviews-pagination{
+  position: sticky;
+  bottom: 20px;
+}
 .on{
   display: none;
   @media (max-width: $md) {
