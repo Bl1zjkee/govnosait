@@ -23,7 +23,7 @@
   display: block;
   border: 1px solid var(--black);
   border-radius: 29px;
-  max-width: 431px;
+  max-width: 430px;
   width: 100%;
   padding: 12px 0 10px 16px;
   margin-bottom: 10px;
@@ -39,7 +39,7 @@
 }
 @media (max-width: 400px) {
   .input {
-    max-width: 329px;
+    max-width: 330px;
   }
 }
 
@@ -395,7 +395,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .main__logo-info a picture img {
   margin-left: 0;
-  max-width: 188px;
+  max-width: 190px;
   height: 40px;
 }
 @media (max-width: 768px) {
@@ -404,7 +404,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   }
   .main__logo-info a picture img {
     max-width: 90px;
-    height: 19px;
+    height: 20px;
   }
 }
 .main__img {
@@ -418,7 +418,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   }
 }
 .main__img picture img {
-  max-width: 947px;
+  max-width: 945px;
   width: 100%;
   margin-left: 0;
 }
@@ -487,8 +487,8 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   color: var(--black);
   display: inline-block;
   align-self: flex-end;
-  max-width: 411px;
-  margin-top: 292px;
+  max-width: 410px;
+  margin-top: 290px;
   position: relative;
   z-index: 1;
 }
@@ -520,8 +520,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .list {
   background: var(--black);
-  padding-top: 90px;
-  padding-bottom: 80px;
+  padding: 90px 0 80px 0;
 }
 @media (max-width: 960px) {
   .list {
@@ -563,9 +562,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   margin-right: 30px;
 }
 .list__photo picture img {
-  max-width: 124px;
+  max-width: 125px;
   width: 100%;
-  height: 124px;
+  height: 125px;
   border-radius: 50%;
 }
 @media (max-width: 960px) {
@@ -580,6 +579,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   color: var(--white);
   margin-bottom: 5px;
   white-space: pre-line;
+  text-transform: uppercase;
 }
 .list__paragraph p {
   font-weight: 400;
@@ -591,7 +591,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .list__paragraph p:last-child {
   margin-top: 17px;
-  max-width: 584px;
+  max-width: 585px;
   white-space: pre-line;
 }
 .list__wrapper {
@@ -602,6 +602,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   font-size: 60px;
   line-height: 115%;
   color: var(--white);
+  text-transform: uppercase;
 }
 @media (max-width: 960px) {
   .list__wrapper h3 {
@@ -628,7 +629,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   padding: 16px 13px 16px 13px;
   border-radius: 20px;
   max-width: 556px;
-  height: 318px;
+  height: 320px;
   font-weight: 400;
   position: relative;
   margin-top: 30px;
@@ -641,7 +642,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 @media (max-width: 768px) {
   .list__from-block {
-    height: 421px;
+    height: 420px;
   }
 }
 .list__from-block picture img {
@@ -743,6 +744,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   font-size: 60px;
   line-height: 115%;
   color: var(--black);
+  text-transform: uppercase;
 }
 @media (max-width: 768px) {
   .receive h3 {
@@ -800,9 +802,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .receive__sales-one {
   background-image: url("../img/receive_b2b.png");
-  max-width: 278px;
+  max-width: 280px;
   width: 100%;
-  height: 597px;
+  height: 595px;
 }
 @media (max-width: 768px) {
   .receive__sales-one {
@@ -847,7 +849,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   background-image: url("../img/receive_product.png");
   max-width: 430px;
   width: 100%;
-  height: 277px;
+  height: 275px;
   background-size: cover;
   padding-right: 16px;
   border-radius: 13px;
@@ -907,7 +909,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .receive__text {
   margin-left: 30px;
-  max-width: 432px;
+  max-width: 430px;
   position: relative;
 }
 @media (max-width: 1280px) {
@@ -981,7 +983,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 .receive__effectiveness-img {
   display: flex;
   flex-wrap: wrap;
-  max-width: 739px;
+  max-width: 740px;
   width: 100%;
   justify-content: space-between;
 }
@@ -1012,7 +1014,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .receive__effectiveness-img-one {
   background-image: url("../img/effectiveness_one.png");
-  max-width: 431px;
+  max-width: 430px;
   width: 100%;
   height: 222px;
   background-size: contain;
@@ -1028,9 +1030,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .receive__effectiveness-img-two {
   background-image: url("../img/effectiveness_two.png");
-  max-width: 278px;
+  max-width: 280px;
   width: 100%;
-  height: 222px;
+  height: 220px;
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 25px;
@@ -1044,9 +1046,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .receive__effectiveness-img-three {
   background-image: url("../img/effectiveness_three.png");
-  max-width: 278px;
+  max-width: 280px;
   width: 100%;
-  height: 202px;
+  height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 25px;
@@ -1060,9 +1062,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .receive__effectiveness-img-four {
   background-image: url("../img/effectiveness_four.png");
-  max-width: 431px;
+  max-width: 430px;
   width: 100%;
-  height: 123px;
+  height: 125px;
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 25px;
@@ -1076,9 +1078,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .receive__effectiveness-img-five {
   background-image: url("../img/effectiveness_five.png");
-  max-width: 431px;
+  max-width: 430px;
   width: 100%;
-  height: 123px;
+  height: 125px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1091,9 +1093,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .receive__effectiveness-img-six {
   background-image: url("../img/effectiveness_six.png");
-  max-width: 278px;
+  max-width: 280px;
   width: 100%;
-  height: 202px;
+  height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1106,7 +1108,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .receive__effectiveness-text {
   margin-left: 30px;
-  max-width: 431px;
+  max-width: 430px;
   width: 100%;
   z-index: 2;
   position: relative;
@@ -1155,9 +1157,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .receive__customers-img {
   background-image: url("../img/Customers_img.png");
-  max-width: 723px;
+  max-width: 725px;
   width: 100%;
-  height: 433px;
+  height: 435px;
   background-size: cover;
   position: relative;
   margin-top: 80px;
@@ -1192,7 +1194,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   color: #020D2B;
 }
 .receive__customers-text {
-  max-width: 431px;
+  max-width: 430px;
   width: 100%;
 }
 .receive__customers-text h3 {
@@ -1254,6 +1256,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   display: flex;
   justify-content: center;
   color: var(--black);
+  text-transform: uppercase;
 }
 .receive__item {
   text-align: left;
@@ -1304,9 +1307,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .receive__loyalty-img {
   background-image: url("../img/Customers_img.png");
-  max-width: 723px;
+  max-width: 725px;
   width: 100%;
-  height: 433px;
+  height: 435px;
   background-size: cover;
   position: relative;
   margin-top: 80px;
@@ -1342,7 +1345,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   color: #020D2B;
 }
 .receive__loyalty-text {
-  max-width: 431px;
+  max-width: 430px;
   width: 100%;
 }
 .receive__loyalty-text h3 {
@@ -1438,9 +1441,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 
 .circle6 {
-  max-width: 498px;
+  max-width: 500px;
   width: 100%;
-  height: 488px;
+  height: 490px;
   position: absolute;
   top: 2px;
   right: -119px;
@@ -1450,8 +1453,8 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 @media (max-width: 768px) {
   .circle6 {
     max-width: 295px;
-    height: 289px;
-    top: 571px;
+    height: 290px;
+    top: 570px;
     right: -125px;
   }
 }
@@ -1460,8 +1463,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   background: var(--black);
   display: flex;
   flex-wrap: wrap;
-  padding-top: 90px;
-  padding-bottom: 80px;
+  padding: 90px 0 80px 0;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -1475,8 +1477,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 @media (max-width: 768px) {
   .work {
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding: 45px 0 45px 0;
   }
   .work h2 {
     font-size: 31px;
@@ -1495,20 +1496,18 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   display: flex;
   flex-basis: 50%;
 }
+.work__list span {
+  font-family: var(--inter);
+  font-weight: 400;
+  font-size: 110px;
+  line-height: 133px;
+  text-transform: uppercase;
+  color: var(--braun);
+  margin-top: 65px;
+}
 @media (max-width: 768px) {
   .work__list {
     display: block;
-  }
-}
-.work__list img {
-  max-width: 126px;
-  align-self: flex-start;
-  margin-top: 65px;
-  position: relative;
-}
-@media (max-width: 1260px) {
-  .work__list img {
-    max-width: 80px;
   }
 }
 .work__list h3 {
@@ -1557,7 +1556,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 .circle7 {
   max-width: 295px;
   width: 100%;
-  height: 289px;
+  height: 290px;
   position: absolute;
   bottom: 33px;
   left: -75px;
@@ -1568,7 +1567,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 .circle8 {
   max-width: 535px;
   width: 100%;
-  height: 524px;
+  height: 525px;
   position: absolute;
   top: 19px;
   right: -120px;
@@ -1579,13 +1578,11 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 
 .reviews {
   background: var(--white);
-  padding-top: 90px;
-  padding-bottom: 82px;
+  padding: 90px 0 82px 0;
 }
 @media (max-width: 960px) {
   .reviews {
-    padding-bottom: 45px;
-    padding-top: 45px;
+    padding: 45px 0 45px 0;
   }
 }
 .reviews h3 {
@@ -1628,15 +1625,13 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 
 .integrations {
   background: var(--black);
-  padding-top: 90px;
-  padding-bottom: 180px;
+  padding: 90px 0 180px 0;
   position: relative;
   overflow: hidden;
 }
 @media (max-width: 540px) {
   .integrations {
-    padding-top: 45px;
-    padding-bottom: 70px;
+    padding: 45px 0 70px 0;
   }
 }
 .integrations h3 {
@@ -1673,7 +1668,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   }
 }
 .integrations picture img {
-  max-width: 223px;
+  max-width: 225px;
   height: 110px;
   position: relative;
   z-index: 2;
@@ -1699,7 +1694,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 .circle8 {
   max-width: 653px;
   width: 100%;
-  height: 632px;
+  height: 630px;
   position: absolute;
   top: -77px;
   right: -177px;
@@ -1708,11 +1703,11 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 
 .circle9 {
-  max-width: 341px;
+  max-width: 340px;
   width: 100%;
   height: 335px;
   position: absolute;
-  top: 224px;
+  top: 225px;
   right: 230px;
   border-radius: 50%;
   border: 2px solid #1A243F;
@@ -1720,9 +1715,8 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 
 .application {
   background: var(--white);
-  padding-top: 90px;
+  padding: 90px 0 0 20px;
   position: relative;
-  padding-left: 20px;
 }
 .application h3 {
   font-weight: 400;
@@ -1750,11 +1744,11 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   display: flex;
 }
 .application__img picture img {
-  max-width: 431px;
-  height: 431px;
+  max-width: 430px;
+  height: 430px;
   position: absolute;
-  top: 81px;
-  right: 206px;
+  top: 80px;
+  right: 205px;
 }
 @media (max-width: 1100px) {
   .application__img picture img {
@@ -1786,7 +1780,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   }
 }
 .application__contact {
-  max-width: 461px;
+  max-width: 460px;
   width: 100%;
   margin-top: 38px;
 }
@@ -1836,7 +1830,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   margin-right: 11px;
 }
 .application__map {
-  margin-top: -221px;
+  margin-top: -220px;
   max-width: 625px;
   width: 100%;
 }
@@ -1851,11 +1845,11 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   height: 100vh;
   position: absolute;
   right: 0;
-  top: -244px;
+  top: -245px;
 }
 @media (max-width: 1260px) {
   .application__map picture img {
-    top: -221px;
+    top: -220px;
   }
 }
 @media (max-width: 1100px) {
@@ -1882,7 +1876,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .footer picture a img {
   margin-left: 0;
-  max-width: 148px;
+  max-width: 150px;
   height: 30px;
   position: relative;
   z-index: 2;
@@ -1919,7 +1913,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   position: absolute;
   bottom: 64px;
   right: -35px;
-  max-width: 341px;
+  max-width: 340px;
   width: 100%;
   height: 335px;
   border-radius: 50%;
@@ -1930,7 +1924,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   position: absolute;
   top: 146px;
   right: 213px;
-  max-width: 341px;
+  max-width: 340px;
   width: 100%;
   height: 335px;
   border-radius: 50%;
@@ -1941,9 +1935,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   position: absolute;
   top: -209px;
   right: -194px;
-  max-width: 643px;
+  max-width: 645px;
   width: 100%;
-  height: 632px;
+  height: 630px;
   border-radius: 50%;
   border: 2px solid #1A243F;
 }

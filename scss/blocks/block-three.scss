@@ -26,6 +26,7 @@
     font-size: 60px;
     line-height: 115%;
     color: var(--black);
+    text-transform: uppercase;
     @media (max-width: $md) {
       font-size: 35px;
       line-height: 115%;
@@ -91,9 +92,9 @@
 
   &__sales-one {
     background-image: url("../img/receive_b2b.png");
-    max-width: 278px;
+    max-width: 280px;
     width: 100%;
-    height: 597px;
+    height: 595px;
     @media (max-width: $md) {
       display: none;
     }
@@ -138,7 +139,7 @@ p{
     background-image: url("../img/receive_product.png");
     max-width: 430px;
     width: 100%;
-    height: 277px;
+    height: 275px;
     background-size: cover;
     padding-right: 16px;
     border-radius: 13px;
@@ -206,7 +207,7 @@ p{
 
   &__text {
     margin-left: 30px;
-    max-width: 432px;
+    max-width: 430px;
     position: relative;
     @media (max-width: $mel-1280) {
       order: -1;
@@ -285,7 +286,7 @@ p{
   &__effectiveness-img {
     display: flex;
     flex-wrap: wrap;
-    max-width: 739px;
+    max-width: 740px;
     width: 100%;
     justify-content: space-between;
     @media (max-width: $mel-1260) {
@@ -319,7 +320,7 @@ p{
 
   &__effectiveness-img-one {
     background-image: url("../img/effectiveness_one.png");
-    max-width: 431px;
+    max-width: 430px;
     width: 100%;
     height: 222px;
     background-size: contain;
@@ -338,9 +339,9 @@ p{
 
   &__effectiveness-img-two {
     background-image: url("../img/effectiveness_two.png");
-    max-width: 278px;
+    max-width: 280px;
     width: 100%;
-    height: 222px;
+    height: 220px;
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 25px;
@@ -357,9 +358,9 @@ p{
 
   &__effectiveness-img-three {
     background-image: url("../img/effectiveness_three.png");
-    max-width: 278px;
+    max-width: 280px;
     width: 100%;
-    height: 202px;
+    height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 25px;
@@ -376,9 +377,9 @@ p{
 
   &__effectiveness-img-four {
     background-image: url("../img/effectiveness_four.png");
-    max-width: 431px;
+    max-width: 430px;
     width: 100%;
-    height: 123px;
+    height: 125px;
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 25px;
@@ -395,9 +396,9 @@ p{
 
   &__effectiveness-img-five {
     background-image: url("../img/effectiveness_five.png");
-    max-width: 431px;
+    max-width: 430px;
     width: 100%;
-    height: 123px;
+    height: 125px;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -413,9 +414,9 @@ p{
 
   &__effectiveness-img-six {
     background-image: url("../img/effectiveness_six.png");
-    max-width: 278px;
+    max-width: 280px;
     width: 100%;
-    height: 202px;
+    height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -431,7 +432,7 @@ p{
 
   &__effectiveness-text {
     margin-left: 30px;
-    max-width: 431px;
+    max-width: 430px;
     width: 100%;
     z-index: 2;
     position: relative;
@@ -487,9 +488,9 @@ p{
 
   &__customers-img {
     background-image: url("../img/Customers_img.png");
-    max-width: 723px;
+    max-width: 725px;
     width: 100%;
-    height: 433px;
+    height: 435px;
     background-size: cover;
     position: relative;
     margin-top: 80px;
@@ -529,7 +530,7 @@ p{
   }
 
   &__customers-text {
-    max-width: 431px;
+    max-width: 430px;
     width: 100%;
 
     h3 {
@@ -589,6 +590,7 @@ p{
       display: flex;
       justify-content: center;
       color: var(--black);
+      text-transform: uppercase;
     }
   }
 
@@ -649,9 +651,9 @@ color: var(--blue);
 
   &__loyalty-img {
     background-image: url("../img/Customers_img.png");
-    max-width: 723px;
+    max-width: 725px;
     width: 100%;
-    height: 433px;
+    height: 435px;
     background-size: cover;
     position: relative;
     margin-top: 80px;
@@ -692,7 +694,7 @@ color: var(--blue);
   }
 
   &__loyalty-text {
-    max-width: 431px;
+    max-width: 430px;
     width: 100%;
 
     h3 {
@@ -785,9 +787,9 @@ color: var(--blue);
   margin-top: 25px;
 }
 .circle6{
-  max-width: 498px;
+  max-width: 500px;
   width: 100%;
-  height: 488px;
+  height: 490px;
   position: absolute;
   top: 2px;
   right: -119px;
@@ -795,8 +797,8 @@ color: var(--blue);
   border-radius: 50%;
   @media (max-width: $md) {
     max-width: 295px;
-    height: 289px;
-    top: 571px;
+    height: 290px;
+    top: 570px;
     right: -125px;
   }
 

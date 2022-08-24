@@ -1,7 +1,7 @@
 .list {
   background: var(--black);
-  padding-top: 90px;
-  padding-bottom: 80px;
+  padding:90px 0 80px 0 ;
+
   @media (max-width: $lg) {
     padding-top: 45px;
   }
@@ -39,9 +39,9 @@
 
     picture{
       img{
-        max-width: 124px;
+        max-width: 125px;
         width: 100%;
-        height: 124px;
+        height: 125px;
         border-radius: 50%;
         @media (max-width: $lg) {
           display: block;
@@ -58,6 +58,7 @@
       color: var(--white);
       margin-bottom: 5px;
      white-space: pre-line;
+      text-transform: uppercase;
     }
 
     p {
@@ -69,7 +70,7 @@
       white-space: pre-line;
       &:last-child {
         margin-top: 17px;
-        max-width: 584px;
+        max-width: 585px;
         white-space: pre-line;
       }
     }
@@ -83,6 +84,7 @@
       font-size: 60px;
       line-height: 115%;
       color: var(--white);
+      text-transform: uppercase;
       @media (max-width: $lg) {
         font-size: 30px;
       }
@@ -108,7 +110,7 @@
     padding: 16px 13px 16px 13px;
     border-radius: 20px;
     max-width: calc(586px - 30px);
-    height: 318px;
+    height: 320px;
     font-weight: 400;
     position: relative;
     margin-top: 30px;
@@ -118,7 +120,7 @@
     }
     @media (max-width: $md) {
 
-      height: 421px;
+      height: 420px;
     }
 
     picture {
