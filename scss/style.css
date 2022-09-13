@@ -1,27 +1,29 @@
 @import "../font/cerapro/stylesheet.css";
 @import "../font/inter/stylesheet.css";
 :root {
-  --white: #FFFFFF;
-  --grey: #F5F5F5;
-  --blue: #2727FF;
-  --black: #020D2B;
-  --braun: #423A3A;
-  --red: #FF4343;
-  --light-white: #E0E0F9;
-  --dark: #1A243F;
-  --light-dark: rgba(62, 62, 62, 0.65);
-  --light-grey: #CCCCCC;
-  --greygrey: #ECECEC;
+  --text-color-primary: #FFFFFF;
+  --text-color-supportive: #F5F5F5;
+  --text-color-active: #2727FF;
+  --text-color-secondary: #020D2B;
+  --text-color-number: #423A3A;
+  --text-color-rare: #FF4343;
+  --text-color-light-primary: var(--bg-circle-two);
+  --text-color-dark: var(--bg-circle);
+  --text-color-light-dark: rgba(62, 62, 62, 0.65);
+  --text-color-light-supportive: #CCCCCC;
+  --text-color-supportiveg-support: #ECECEC;
   --button-initial: #2727FF;
   --button-hover: rgba(39, 39, 255, 0.6);
   --button-disabled: #CCCCCC;
   --fonts:"cera pro";
-  --inter:"Inter";
+  --inter:"inter";
+  --bg-circle:#1A243F;
+  --bg-circle-two:var(--bg-circle-two);
 }
 
 .input {
   display: block;
-  border: 1px solid var(--black);
+  border: 1px solid var(--text-color-secondary);
   border-radius: 29px;
   max-width: 430px;
   width: 100%;
@@ -31,7 +33,7 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 120%;
-  color: var(--black);
+  color: var(--text-color-secondary);
   font-family: var(--inter);
 }
 .input::placeholder {
@@ -44,7 +46,7 @@
 }
 
 textarea {
-  border: 1px solid var(--black);
+  border: 1px solid var(--text-color-secondary);
   border-radius: 29px;
   max-width: 430px;
   font-family: var(--inter);
@@ -58,7 +60,7 @@ textarea {
   padding: 12px 0 0 16px;
 }
 textarea::placeholder {
-  color: var(--black);
+  color: var(--text-color-secondary);
 }
 @media (max-width: 400px) {
   textarea {
@@ -67,13 +69,13 @@ textarea::placeholder {
 }
 
 button {
-  background: var(--blue);
+  background: var(--text-color-active);
   border-radius: 29px;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 120%;
-  color: var(--grey);
+  color: var(--text-color-supportive);
   padding: 14px 63px;
   border: none;
   display: flex;
@@ -102,7 +104,7 @@ button:hover {
   font-weight: 400;
   font-size: 20px;
   line-height: 105%;
-  color: var(--black);
+  color: var(--text-color-secondary);
   display: inline-block;
   margin-left: 65px;
   position: relative;
@@ -114,7 +116,7 @@ button:hover {
   }
 }
 .tab p.active {
-  color: var(--blue);
+  color: var(--text-color-active);
 }
 .tab p.active:before {
   display: block;
@@ -124,7 +126,7 @@ button:hover {
 }
 .tab p:before {
   content: "";
-  background: var(--blue);
+  background: var(--text-color-active);
   height: 4px;
   width: 100%;
   position: absolute;
@@ -174,7 +176,7 @@ button:hover {
 }
 
 .swiper-button-next {
-  color: var(--blue);
+  color: var(--text-color-active);
   top: 96%;
 }
 .swiper-button-next:after {
@@ -195,7 +197,7 @@ button:hover {
 }
 
 .swiper-button-prev {
-  color: var(--blue);
+  color: var(--text-color-active);
   left: 650px;
   top: 96%;
 }
@@ -234,32 +236,32 @@ button:hover {
   border-color: black;
   border-style: solid;
   border-width: 1px;
-  background: var(--white);
+  background: var(--text-color-primary);
   opacity: 2;
 }
 
 .visible > .swiper-pagination-bullet {
   width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px));
   height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px));
-  border-color: var(--white);
+  border-color: var(--text-color-primary);
   border-style: solid;
   border-width: 1px;
-  background: var(--black);
+  background: var(--text-color-secondary);
   opacity: 2;
 }
 
 .swiper-pagination-bullet-active {
   border-color: transparent;
-  background: var(--blue);
+  background: var(--text-color-active);
 }
 
 .visible > .swiper-pagination-bullet-active {
   border-color: transparent;
-  background: var(--blue);
+  background: var(--text-color-active);
 }
 
 .color {
-  background: var(--black);
+  background: var(--text-color-secondary);
 }
 
 .mainSwiper {
@@ -379,11 +381,12 @@ table {
 a, p, h1, h2, h3, h4, span, li, input, button {
   font-family: var(--fonts);
   font-style: normal;
+  font-weight: normal;
 }
 
 .main {
   padding-bottom: 45px;
-  background-color: var(--white);
+  background-color: var(--text-color-primary);
   position: relative;
 }
 .main__logo-info {
@@ -432,10 +435,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .main__info a {
   display: flex;
-  font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  color: var(--black);
+  color: var(--text-color-secondary);
   align-items: center;
   margin-top: 0;
 }
@@ -484,7 +486,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   justify-content: space-between;
 }
 .main__text {
-  color: var(--black);
+  color: var(--text-color-secondary);
   display: inline-block;
   align-self: flex-end;
   max-width: 410px;
@@ -507,7 +509,6 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   }
 }
 .main__text p {
-  font-weight: 400;
   font-size: 30px;
   line-height: 120%;
 }
@@ -520,7 +521,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 
 .list {
-  background: var(--black);
+  background: var(--text-color-secondary);
   padding: 90px 0 80px 0;
 }
 @media (max-width: 960px) {
@@ -538,11 +539,10 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   }
 }
 .list__founder h2 {
-  font-weight: 400;
   font-size: 60px;
   line-height: 115%;
   text-transform: uppercase;
-  color: var(--white);
+  color: var(--text-color-primary);
 }
 @media (max-width: 1100px) {
   .list__founder h2 {
@@ -574,19 +574,17 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   }
 }
 .list__paragraph h3 {
-  font-weight: 400;
   font-size: 30px;
   line-height: 120%;
-  color: var(--white);
+  color: var(--text-color-primary);
   margin-bottom: 5px;
   white-space: pre-line;
   text-transform: uppercase;
 }
 .list__paragraph p {
-  font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  color: var(--white);
+  color: var(--text-color-primary);
   max-width: 379px;
   white-space: pre-line;
 }
@@ -599,10 +597,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   margin-top: 84px;
 }
 .list__wrapper h3 {
-  font-weight: 400;
   font-size: 60px;
   line-height: 115%;
-  color: var(--white);
+  color: var(--text-color-primary);
   text-transform: uppercase;
 }
 @media (max-width: 960px) {
@@ -626,19 +623,17 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   }
 }
 .list__from-block {
-  background: var(--grey);
+  background: var(--text-color-supportive);
   padding: 16px 13px 16px 13px;
   border-radius: 20px;
   max-width: 556px;
   height: 320px;
-  font-weight: 400;
   position: relative;
   margin-top: 30px;
 }
 @media (max-width: 1260px) {
   .list__from-block {
-    margin: 0 auto;
-    margin-top: 30px;
+    margin: 30px 0 auto;
   }
 }
 @media (max-width: 768px) {
@@ -653,7 +648,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   font-size: 35px;
   line-height: 120%;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--text-color-secondary);
 }
 @media (max-width: 768px) {
   .list__from-block h3 {
@@ -670,7 +665,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 .list__from-block p {
   font-size: 18px;
   line-height: 140%;
-  color: var(--black);
+  color: var(--text-color-secondary);
   margin-top: 2px;
 }
 @media (max-width: 768px) {
@@ -694,11 +689,10 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 .list__number span {
   font-family: var(--inter);
   font-style: normal;
-  font-weight: 400;
   font-size: 150px;
   line-height: 182px;
   text-transform: uppercase;
-  color: var(--greygrey);
+  color: var(--text-color-supportivegrey);
 }
 @media (max-width: 768px) {
   .list__number span {
@@ -716,7 +710,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 
 .receive {
-  background: var(--white);
+  background: var(--text-color-primary);
   padding: 90px 0px 105px 0px;
 }
 @media (max-width: 768px) {
@@ -741,10 +735,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 .receive h3 {
   font-family: var(--fonts);
   font-style: normal;
-  font-weight: 400;
   font-size: 60px;
   line-height: 115%;
-  color: var(--black);
+  color: var(--text-color-secondary);
   text-transform: uppercase;
 }
 @media (max-width: 768px) {
@@ -788,17 +781,15 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   position: relative;
   z-index: 1;
   font-style: normal;
-  font-weight: 400;
   font-size: 25px;
   line-height: 120%;
-  color: var(--white);
+  color: var(--text-color-primary);
 }
 .receive__sales p {
   font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  color: var(--white);
+  color: var(--text-color-primary);
   display: none;
 }
 .receive__sales-one {
@@ -816,14 +807,13 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   padding: 0 16px 16px 16px;
 }
 .receive__sales-one h3 {
-  font-weight: 400;
   font-size: 25px;
   line-height: 120%;
-  color: var(--white);
+  color: var(--text-color-primary);
   padding: 16px 16px 0 16px;
 }
 .receive__sales-one:hover {
-  background: var(--blue);
+  background: var(--text-color-active);
   border-radius: 13px;
 }
 .receive__sales-one:hover p {
@@ -856,10 +846,10 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   border-radius: 13px;
 }
 .receive__img-one h3, .receive__img-one p {
-  padding: 0px 16px 16px 16px;
+  padding: 0 16px 16px 16px;
 }
 .receive__img-one:hover {
-  background: var(--blue);
+  background: var(--text-color-active);
   border-radius: 13px;
 }
 .receive__img-one:hover p {
@@ -880,7 +870,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   padding: 16px 16px 0 16px;
 }
 .receive .receive__img-two:hover {
-  background: var(--blue);
+  background: var(--text-color-active);
   border-radius: 13px;
 }
 .receive .receive__img-two:hover p {
@@ -902,7 +892,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   padding: 16px 16px 0 16px;
 }
 .receive .receive__img-three:hover {
-  background: var(--blue);
+  background: var(--text-color-active);
   border-radius: 13px;
 }
 .receive .receive__img-three:hover p {
@@ -934,11 +924,10 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   margin-bottom: 20px;
   padding: 0;
   font-style: normal;
-  font-weight: 400;
   font-size: 35px;
   line-height: 120%;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--text-color-secondary);
 }
 @media (max-width: 768px) {
   .receive__text h3 {
@@ -947,9 +936,8 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   }
 }
 .receive__text h3 span {
-  color: var(--red);
+  color: var(--text-color-rare);
   font-style: normal;
-  font-weight: 400;
   font-size: 35px;
   line-height: 120%;
   text-transform: uppercase;
@@ -961,10 +949,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .receive__text p {
   font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  color: var(--black);
+  color: var(--text-color-secondary);
   display: block;
   padding: 0;
 }
@@ -995,10 +982,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .receive__effectiveness-img h3 {
   font-style: normal;
-  font-weight: 400;
   font-size: 25px;
   line-height: 120%;
-  color: var(--white);
+  color: var(--text-color-primary);
   padding-top: 16px;
   padding-left: 16px;
   margin-bottom: 10px;
@@ -1006,10 +992,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .receive__effectiveness-img p {
   font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  color: var(--white);
+  color: var(--text-color-primary);
   display: none;
   padding: 0 16px;
 }
@@ -1018,12 +1003,10 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   max-width: 430px;
   width: 100%;
   height: 222px;
-  background-size: contain;
-  background-repeat: no-repeat;
   margin-bottom: 25px;
 }
 .receive__effectiveness-img-one:hover {
-  background: var(--blue);
+  background: var(--text-color-active);
   border-radius: 13px;
 }
 .receive__effectiveness-img-one:hover p {
@@ -1034,12 +1017,10 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   max-width: 280px;
   width: 100%;
   height: 220px;
-  background-size: cover;
-  background-repeat: no-repeat;
   margin-bottom: 25px;
 }
 .receive__effectiveness-img-two:hover {
-  background: var(--blue);
+  background: var(--text-color-active);
   border-radius: 13px;
 }
 .receive__effectiveness-img-two:hover p {
@@ -1050,12 +1031,10 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   max-width: 280px;
   width: 100%;
   height: 200px;
-  background-size: cover;
-  background-repeat: no-repeat;
   margin-bottom: 25px;
 }
 .receive__effectiveness-img-three:hover {
-  background: var(--blue);
+  background: var(--text-color-active);
   border-radius: 13px;
 }
 .receive__effectiveness-img-three:hover p {
@@ -1066,12 +1045,10 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   max-width: 430px;
   width: 100%;
   height: 125px;
-  background-size: cover;
-  background-repeat: no-repeat;
   margin-bottom: 25px;
 }
 .receive__effectiveness-img-four:hover {
-  background: var(--blue);
+  background: var(--text-color-active);
   border-radius: 13px;
 }
 .receive__effectiveness-img-four:hover p {
@@ -1082,11 +1059,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   max-width: 430px;
   width: 100%;
   height: 125px;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .receive__effectiveness-img-five:hover {
-  background: var(--blue);
+  background: var(--text-color-active);
   border-radius: 13px;
 }
 .receive__effectiveness-img-five:hover p {
@@ -1101,7 +1076,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   background-repeat: no-repeat;
 }
 .receive__effectiveness-img-six:hover {
-  background: var(--blue);
+  background: var(--text-color-active);
   border-radius: 13px;
 }
 .receive__effectiveness-img-six:hover p {
@@ -1121,12 +1096,11 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .receive__effectiveness-text h3 {
   font-style: normal;
-  font-weight: 400;
   font-size: 35px;
   line-height: 120%;
   text-transform: uppercase;
   white-space: pre-line;
-  color: var(--black);
+  color: var(--text-color-secondary);
 }
 @media (max-width: 768px) {
   .receive__effectiveness-text h3 {
@@ -1138,14 +1112,13 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   margin-top: 40px;
 }
 .receive__effectiveness-text h3 span {
-  color: var(--red);
+  color: var(--text-color-rare);
 }
 .receive__effectiveness-text p {
   font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  color: var(--black);
+  color: var(--text-color-secondary);
   margin-top: 20px;
 }
 .receive__customers {
@@ -1161,8 +1134,6 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   max-width: 725px;
   width: 100%;
   height: 435px;
-  background-size: cover;
-  position: relative;
   margin-top: 80px;
 }
 @media (max-width: 1260px) {
@@ -1199,11 +1170,10 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   width: 100%;
 }
 .receive__customers-text h3 {
-  font-weight: 400;
   font-size: 35px;
   line-height: 120%;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--text-color-secondary);
 }
 @media (max-width: 768px) {
   .receive__customers-text h3 {
@@ -1214,7 +1184,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   margin-top: 40px;
 }
 .receive__customers-text h3 span {
-  color: var(--red);
+  color: var(--text-color-rare);
 }
 @media (max-width: 768px) {
   .receive__customers-text h3 span {
@@ -1222,10 +1192,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   }
 }
 .receive__customers-text p {
-  font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  color: var(--black);
+  color: var(--text-color-secondary);
   margin-top: 20px;
   white-space: pre-line;
 }
@@ -1251,19 +1220,18 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   }
 }
 .receive__slide h3 {
-  font-weight: 400;
   font-size: 30px;
   line-height: 120%;
   display: flex;
   justify-content: center;
-  color: var(--black);
+  color: var(--text-color-secondary);
   text-transform: uppercase;
 }
 .receive__item {
   text-align: left;
   max-width: 290px;
   width: 100%;
-  background: var(--blue);
+  background: var(--text-color-active);
   padding: 16px;
   height: 447px;
   border-radius: 13px;
@@ -1271,13 +1239,12 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .receive__item h3 {
   display: block;
-  font-weight: 400;
   font-size: 20px;
   line-height: 120%;
-  color: var(--white);
+  color: var(--text-color-primary);
 }
 .receive__item p {
-  color: var(--white);
+  color: var(--text-color-primary);
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
@@ -1296,7 +1263,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   line-height: 140%;
 }
 .receive__next > .next {
-  color: var(--blue);
+  color: var(--text-color-active);
 }
 .receive__loyalty {
   justify-content: space-between;
@@ -1311,8 +1278,6 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   max-width: 725px;
   width: 100%;
   height: 435px;
-  background-size: cover;
-  position: relative;
   margin-top: 80px;
 }
 @media (max-width: 1260px) {
@@ -1340,7 +1305,6 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   text-align: right;
 }
 .receive__loyalty-img-text p {
-  font-weight: 400;
   font-size: 30px;
   line-height: 120%;
   color: #020D2B;
@@ -1350,11 +1314,10 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   width: 100%;
 }
 .receive__loyalty-text h3 {
-  font-weight: 400;
   font-size: 35px;
   line-height: 120%;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--text-color-secondary);
 }
 @media (max-width: 768px) {
   .receive__loyalty-text h3 {
@@ -1365,7 +1328,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   margin-top: 40px;
 }
 .receive__loyalty-text h3 span {
-  color: var(--red);
+  color: var(--text-color-rare);
 }
 @media (max-width: 768px) {
   .receive__loyalty-text h3 span {
@@ -1373,10 +1336,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   }
 }
 .receive__loyalty-text p {
-  font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  color: var(--black);
+  color: var(--text-color-secondary);
   margin-top: 20px;
   white-space: pre-line;
 }
@@ -1421,7 +1383,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   align-items: center;
   white-space: pre-line;
   justify-content: flex-end;
-  color: var(--blue);
+  color: var(--text-color-active);
 }
 @media (max-width: 1100px) {
   .next {
@@ -1448,7 +1410,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   position: absolute;
   top: 2px;
   right: -119px;
-  border: 2px solid #E0E0F9;
+  border: 2px solid var(--bg-circle-two);
   border-radius: 50%;
 }
 @media (max-width: 768px) {
@@ -1460,8 +1422,13 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   }
 }
 
+.imges {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .work {
-  background: var(--black);
+  background: var(--text-color-secondary);
   display: flex;
   flex-wrap: wrap;
   padding: 90px 0 80px 0;
@@ -1474,7 +1441,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   font-size: 60px;
   line-height: 115%;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--text-color-primary);
 }
 @media (max-width: 768px) {
   .work {
@@ -1499,11 +1466,10 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 .work__list span {
   font-family: var(--inter);
-  font-weight: 400;
   font-size: 110px;
   line-height: 133px;
   text-transform: uppercase;
-  color: var(--braun);
+  color: var(--text-color-number);
   margin-top: 65px;
 }
 @media (max-width: 768px) {
@@ -1561,7 +1527,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   position: absolute;
   bottom: 33px;
   left: -75px;
-  border: 2px solid #1A243F;
+  border: 2px solid var(--bg-circle);
   border-radius: 50%;
 }
 
@@ -1572,13 +1538,13 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   position: absolute;
   top: 19px;
   right: -120px;
-  border: 2px solid #1A243F;
+  border: 2px solid var(--bg-circle);
   border-radius: 50%;
   z-index: 0;
 }
 
 .reviews {
-  background: var(--white);
+  background: var(--text-color-primary);
   padding: 90px 0 82px 0;
 }
 @media (max-width: 960px) {
@@ -1587,14 +1553,13 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   }
 }
 .reviews h3 {
-  font-weight: 400;
   font-size: 60px;
   line-height: 115%;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--text-color-secondary);
 }
 .reviews p {
-  color: var(--black);
+  color: var(--text-color-secondary);
   text-align: justify;
 }
 .reviews__review {
@@ -1625,7 +1590,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 }
 
 .integrations {
-  background: var(--black);
+  background: var(--text-color-secondary);
   padding: 90px 0 180px 0;
   position: relative;
   overflow: hidden;
@@ -1636,11 +1601,10 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   }
 }
 .integrations h3 {
-  font-weight: 400;
   font-size: 60px;
   line-height: 115%;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--text-color-primary);
 }
 @media (max-width: 540px) {
   .integrations h3 {
@@ -1687,8 +1651,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 @media (max-width: 540px) {
   .integrations picture img:last-child {
     display: block;
-    margin: 0 auto;
-    margin-top: 45px;
+    margin: 45px 0 auto;
   }
 }
 
@@ -1700,7 +1663,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   top: -77px;
   right: -177px;
   border-radius: 50%;
-  border: 2px solid #1A243F;
+  border: 2px solid var(--bg-circle);
 }
 
 .circle9 {
@@ -1711,20 +1674,19 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   top: 225px;
   right: 230px;
   border-radius: 50%;
-  border: 2px solid #1A243F;
+  border: 2px solid var(--bg-circle);
 }
 
 .application {
-  background: var(--white);
+  background: var(--text-color-primary);
   padding: 90px 0 0 20px;
   position: relative;
 }
 .application h3 {
-  font-weight: 400;
   font-size: 60px;
   line-height: 115%;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--text-color-secondary);
 }
 @media (max-width: 1260px) {
   .application h3 {
@@ -1788,10 +1750,9 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 .application__contact a {
   margin-bottom: 17px;
   display: flex;
-  font-weight: 400;
   font-size: 25px;
   line-height: 120%;
-  color: var(--black);
+  color: var(--text-color-secondary);
   align-items: center;
 }
 .application__contact a:nth-of-type(1):before {
@@ -1812,7 +1773,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   flex-shrink: 0;
   margin-right: 11px;
 }
-.application__contact a:nth-of-type(3):before {
+.application__contact a:zth-of-type(3):before {
   content: "";
   background-image: url("../icon/telephone.svg");
   width: 24px;
@@ -1867,7 +1828,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
 
 .footer {
   padding: 115px 0;
-  background: var(--black);
+  background: var(--text-color-secondary);
   width: 100%;
   height: 100%;
   display: flex;
@@ -1891,7 +1852,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   width: 100%;
   height: 335px;
   border-radius: 50%;
-  border: 2px solid #1A243F;
+  border: 2px solid var(--bg-circle);
 }
 
 .circle2 {
@@ -1902,7 +1863,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   width: 100%;
   height: 335px;
   border-radius: 50%;
-  border: 2px solid #1A243F;
+  border: 2px solid var(--bg-circle);
 }
 @media (max-width: 768px) {
   .circle2 {
@@ -1918,7 +1879,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   width: 100%;
   height: 335px;
   border-radius: 50%;
-  border: 2px solid #1A243F;
+  border: 2px solid var(--bg-circle);
 }
 
 .circle4 {
@@ -1929,7 +1890,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   width: 100%;
   height: 335px;
   border-radius: 50%;
-  border: 2px solid #1A243F;
+  border: 2px solid var(--bg-circle);
 }
 
 .circle5 {
@@ -1940,7 +1901,7 @@ a, p, h1, h2, h3, h4, span, li, input, button {
   width: 100%;
   height: 630px;
   border-radius: 50%;
-  border: 2px solid #1A243F;
+  border: 2px solid var(--bg-circle);
 }
 @media (max-width: 768px) {
   .circle5 {

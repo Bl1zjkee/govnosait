@@ -1,7 +1,6 @@
 .list {
-  background: var(--black);
-  padding:90px 0 80px 0 ;
-
+  background: var(--text-color-secondary);
+  padding: 90px 0 80px 0;
   @media (max-width: $lg) {
     padding-top: 45px;
   }
@@ -14,11 +13,10 @@
     }
 
     h2 {
-      font-weight: 400;
       font-size: 60px;
       line-height: 115%;
       text-transform: uppercase;
-      color: var(--white);
+      color: var(--text-color-primary);
       @media (max-width: $el) {
         font-size: 40px;
       }
@@ -37,8 +35,8 @@
   &__photo {
     margin-right: 30px;
 
-    picture{
-      img{
+    picture {
+      img {
         max-width: 125px;
         width: 100%;
         height: 125px;
@@ -52,22 +50,21 @@
 
   &__paragraph {
     h3 {
-      font-weight: 400;
       font-size: 30px;
       line-height: 120%;
-      color: var(--white);
+      color: var(--text-color-primary);
       margin-bottom: 5px;
-     white-space: pre-line;
+      white-space: pre-line;
       text-transform: uppercase;
     }
 
     p {
-      font-weight: 400;
       font-size: 18px;
       line-height: 140%;
-      color: var(--white);
+      color: var(--text-color-primary);
       max-width: 379px;
       white-space: pre-line;
+
       &:last-child {
         margin-top: 17px;
         max-width: 585px;
@@ -80,46 +77,41 @@
     margin-top: 84px;
 
     h3 {
-      font-weight: 400;
       font-size: 60px;
       line-height: 115%;
-      color: var(--white);
+      color: var(--text-color-primary);
       text-transform: uppercase;
       @media (max-width: $lg) {
         font-size: 30px;
       }
     }
-
   }
 
   &__from {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    @media (max-width: $mel-1260) {
+    @media (max-width: $xl) {
       display: block;
 
     }
-@media (max-width: 768px) {
-  display: none;
-}
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__from-block {
-    background: var(--grey);
+    background: var(--text-color-supportive);
     padding: 16px 13px 16px 13px;
     border-radius: 20px;
     max-width: calc(586px - 30px);
     height: 320px;
-    font-weight: 400;
     position: relative;
     margin-top: 30px;
-    @media (max-width: $mel-1260) {
-      margin: 0 auto;
-      margin-top: 30px;
+    @media (max-width: $xl) {
+      margin: 30px 0 auto;
     }
     @media (max-width: $md) {
-
       height: 420px;
     }
 
@@ -133,13 +125,13 @@
       font-size: 35px;
       line-height: 120%;
       text-transform: uppercase;
-      color: var(--black);
+      color: var(--text-color-secondary);
       @media (max-width: $md) {
-font-size: 22px;
+        font-size: 22px;
         white-space: pre-line;
       }
-      @media (max-width:$md ) {
-        white-space:inherit;
+      @media (max-width: $md) {
+        white-space: inherit;
         text-align: left;
       }
     }
@@ -147,10 +139,10 @@ font-size: 22px;
     p {
       font-size: 18px;
       line-height: 140%;
-      color: var(--black);
+      color: var(--text-color-secondary);
       margin-top: 2px;
       @media (max-width: $md) {
-        font-size:16px;
+        font-size: 16px;
         margin-top: 10px;
         text-align: left;
       }
@@ -162,8 +154,6 @@ font-size: 22px;
     position: absolute;
     left: 30px;
     bottom: 16px;
-
-
   }
 
   &__number {
@@ -174,22 +164,21 @@ font-size: 22px;
     span {
       font-family: var(--inter);
       font-style: normal;
-      font-weight: 400;
       font-size: 150px;
       line-height: 182px;
       text-transform: uppercase;
-      color: var(--greygrey);
+      color: var(--text-color-supportivegrey);
       @media (max-width: $md) {
         font-size: 100px;
         line-height: 121px;
       }
     }
   }
-  &__swipers{
- display: none;
+
+  &__swipers {
+    display: none;
     @media (max-width: 768px) {
       display: block;
-
     }
   }
 }

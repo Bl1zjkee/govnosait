@@ -1,5 +1,5 @@
 .list {
-  background: var(--black);
+  background: var(--text-color-secondary);
   height: 500px;
 }
 

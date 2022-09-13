@@ -1,6 +1,6 @@
 .input{
   display: block;
-  border: 1px solid var(--black);
+  border: 1px solid var(--text-color-secondary);
   border-radius: 29px;
   max-width: 430px;
   width: 100%;
@@ -10,7 +10,7 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 120%;
-  color: var(--black);
+  color: var(--text-color-secondary);
   font-family: var(--inter);
   &::placeholder{
     color:  rgba(72, 72, 72, 0.8);;
@@ -22,7 +22,7 @@ max-width: 330px;
 
 }
 textarea{
-  border: 1px solid var(--black);
+  border: 1px solid var(--text-color-secondary);
   border-radius: 29px;
   max-width: 430px;
   font-family: var(--inter);
@@ -35,7 +35,7 @@ textarea{
   height: 100px;
   padding: 12px 0 0 16px;
   &::placeholder{
-    color: var(--black);
+    color: var(--text-color-secondary);
   }
   @media (max-width: 400px) {
     max-width: 330px;
@@ -44,13 +44,13 @@ textarea{
 }
 
 button{
-  background: var(--blue);
+  background: var(--text-color-active);
   border-radius: 29px;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 120%;
-  color: var(--grey);
+  color: var(--text-color-supportive);
 padding: 14px 63px;
   border: none;
   display: flex;

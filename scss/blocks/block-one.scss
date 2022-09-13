@@ -1,67 +1,63 @@
 .main {
   padding-bottom: 45px;
-  background-color: var(--white);
+  background-color: var(--text-color-primary);
   position: relative;
 
   &__logo-info {
     display: flex;
     justify-content: space-between;
-
-     a{
-       margin-top: 49px;
-
-       picture{
-       img {
-         margin-left: 0;
-         max-width: 190px;
-         height: 40px;
-       }
-     }
-       @media (max-width: $md) {
-         picture{
-           img{
-             max-width: 90px;
-             height: 20px;
-           }
-         }
-         margin-top: 30px;
-       }
-   }
+    a {
+      margin-top: 49px;
+      picture {
+        img {
+          margin-left: 0;
+          max-width: 190px;
+          height: 40px;
+        }
+      }
+      @media (max-width: $md) {
+        picture {
+          img {
+            max-width: 90px;
+            height: 20px;
+          }
+        }
+        margin-top: 30px;
+      }
+    }
   }
 
-  &__img{
+  &__img {
     position: absolute;
     top: 86px;
     right: 0;
     @media (max-width: $md) {
       margin-top: 76px;
     }
-    picture{
-        img{
-          max-width: 945px;
-          width: 100%;
-          margin-left: 0;
-        }
+    picture {
+      img {
+        max-width: 945px;
+        width: 100%;
+        margin-left: 0;
+      }
     }
   }
+
   &__info {
     margin-top: 40px;
     @media (max-width: $md) {
       margin-top: 30px;
     }
-
     a {
       display: flex;
-      font-weight: 400;
       font-size: 18px;
       line-height: 140%;
-      color: var(--black);
+      color: var(--text-color-secondary);
       align-items: center;
       margin-top: 0;
       @media (max-width: $md) {
         font-size: 14px
       }
-
       &:before {
         content: '';
         display: inline-block;
@@ -94,7 +90,6 @@
             background-position: center;
           }
         }
-
       }
     }
   }
@@ -106,7 +101,7 @@
 
 
   &__text {
-    color: var(--black);
+    color: var(--text-color-secondary);
     display: inline-block;
     align-self: flex-end;
     max-width: 410px;
@@ -128,7 +123,6 @@
     }
 
     p {
-      font-weight: 400;
       font-size: 30px;
       line-height: 120%;
       @media (max-width: $md) {
@@ -136,10 +130,6 @@
         line-height: 120%;
         white-space: pre-line;
       }
-
     }
   }
-
-
-
 }

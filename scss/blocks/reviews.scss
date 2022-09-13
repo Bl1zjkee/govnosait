@@ -1,47 +1,47 @@
 .reviews {
-  background: var(--white);
+  background: var(--text-color-primary);
   padding: 90px 0 82px 0;
-
   @media (max-width: $lg) {
     padding: 45px 0 45px 0;
   }
 
   h3 {
-    font-weight: 400;
     font-size: 60px;
     line-height: 115%;
     text-transform: uppercase;
-    color: var(--black);
+    color: var(--text-color-secondary);
   }
 
   p {
-    color: var(--black);
+    color: var(--text-color-secondary);
     text-align: justify;
   }
 
   &__review {
     display: flex;
     justify-content: space-between;
-    @media (max-width:$mel-1260 ) {
+    @media (max-width: $xl) {
       display: block;
     }
   }
 }
-.list__paragraph{
-  h3{
+
+.list__paragraph {
+  h3 {
     font-size: 30px;
     text-align: justify;
   }
 }
-.ends{
-  @media (max-width:$mel-1260 ) {
+
+.ends {
+  @media (max-width: $xl) {
     margin-top: 30px;
   }
 
 }
-.end{
-  @media (max-width: $mel-1260) {
+
+.end {
+  @media (max-width: $xl) {
     justify-content: center;
   }
-
 }

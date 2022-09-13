@@ -1,11 +1,10 @@
 
 .receive {
-  background: var(--white);
+  background: var(--text-color-primary);
   padding: 90px 0px 105px 0px;
   @media (max-width: $md) {
-    padding-top:45px ;
+    padding-top: 45px;
   }
-
 
   hr {
     display: block;
@@ -18,14 +17,12 @@
     }
   }
 
-
   h3 {
     font-family: var(--fonts);
     font-style: normal;
-    font-weight: 400;
     font-size: 60px;
     line-height: 115%;
-    color: var(--black);
+    color: var(--text-color-secondary);
     text-transform: uppercase;
     @media (max-width: $md) {
       font-size: 35px;
@@ -33,16 +30,14 @@
     }
   }
 
-
   &__sales {
     display: none;
     position: relative;
     overflow: hidden;
-    @media (max-width: $mel-1280) {
+    @media (max-width: $xxl) {
       flex-wrap: wrap;
       justify-content: center;
     }
-
 
     &.active {
       display: flex;
@@ -61,12 +56,12 @@
         height: 100%;
         background: rgba(62, 62, 62, 0.65);
         border-radius: 13px;
-
       }
-      &:hover{
-&:before{
-  display: none;
-}
+
+      &:hover {
+        &:before {
+          display: none;
+        }
       }
     }
 
@@ -74,18 +69,16 @@
       position: relative;
       z-index: 1;
       font-style: normal;
-      font-weight: 400;
       font-size: 25px;
       line-height: 120%;
-      color: var(--white);
+      color: var(--text-color-primary);
     }
 
     p {
       font-style: normal;
-      font-weight: 400;
       font-size: 18px;
       line-height: 140%;
-      color: var(--white);
+      color: var(--text-color-primary);
       display: none;
     }
   }
@@ -98,19 +91,20 @@
     @media (max-width: $md) {
       display: none;
     }
-p{
-  padding: 0 16px 16px 16px;
-}
+
+    p {
+      padding: 0 16px 16px 16px;
+    }
+
     h3 {
-      font-weight: 400;
       font-size: 25px;
       line-height: 120%;
-      color: var(--white);
+      color: var(--text-color-primary);
       padding: 16px 16px 0 16px;
     }
 
     &:hover {
-      background: var(--blue);
+      background: var(--text-color-active);
       border-radius: 13px;
 
       p {
@@ -144,12 +138,14 @@ p{
     padding-right: 16px;
     border-radius: 13px;
 
-h3,p{
-  padding: 0px 16px 16px 16px;
-}
+    h3, p {
+      padding: 0 16px 16px 16px;
+    }
+
     &:hover {
-      background: var(--blue);
+      background: var(--text-color-active);
       border-radius: 13px;
+
       p {
         display: block;
       }
@@ -163,17 +159,17 @@ h3,p{
     background-size: cover;
     height: 295px;
     margin-top: 25px;
-p{
-  padding: 0 16px 16px 16px;
-}
-    h3{
+    p {
+      padding: 0 16px 16px 16px;
+    }
+
+    h3 {
       padding: 16px 16px 0 16px;
     }
 
     &:hover {
-      background: var(--blue);
+      background: var(--text-color-active);
       border-radius: 13px;
-
       p {
         display: block;
       }
@@ -189,16 +185,19 @@ p{
     height: 295px;
     margin-top: 25px;
     margin-left: 30px;
-p{
-  padding: 0 16px 16px 16px;
-}
-    h3{
+
+    p {
+      padding: 0 16px 16px 16px;
+    }
+
+    h3 {
       padding: 16px 16px 0 16px;
     }
 
     &:hover {
-      background: var(--blue);
+      background: var(--text-color-active);
       border-radius: 13px;
+
       p {
         display: block;
       }
@@ -209,7 +208,7 @@ p{
     margin-left: 30px;
     max-width: 430px;
     position: relative;
-    @media (max-width: $mel-1280) {
+    @media (max-width: $xxl) {
       order: -1;
     }
     @media (max-width: $md) {
@@ -219,7 +218,6 @@ p{
 
     ul {
       margin-left: 45px;
-
       li {
         margin-top: 10px;
       }
@@ -229,21 +227,18 @@ p{
       margin-bottom: 20px;
       padding: 0;
       font-style: normal;
-      font-weight: 400;
       font-size: 35px;
       line-height: 120%;
       text-transform: uppercase;
-      color: var(--black);
+      color: var(--text-color-secondary);
       @media (max-width: $md) {
-     margin-bottom: 10px;
+        margin-bottom: 10px;
         font-size: 30px;
       }
 
-
       span {
-        color: var(--red);
+        color: var(--text-color-rare);
         font-style: normal;
-        font-weight: 400;
         font-size: 35px;
         line-height: 120%;
         text-transform: uppercase;
@@ -255,10 +250,9 @@ p{
 
     p {
       font-style: normal;
-      font-weight: 400;
       font-size: 18px;
       line-height: 140%;
-      color: var(--black);
+      color: var(--text-color-secondary);
       display: block;
       padding: 0;
 
@@ -267,7 +261,6 @@ p{
     p:nth-of-type(2) {
       margin-top: 10px;
     }
-
   }
 
   &__effectiveness {
@@ -289,16 +282,15 @@ p{
     max-width: 740px;
     width: 100%;
     justify-content: space-between;
-    @media (max-width: $mel-1260) {
+    @media (max-width: $xl) {
       display: none;
     }
 
     h3 {
       font-style: normal;
-      font-weight: 400;
       font-size: 25px;
       line-height: 120%;
-      color: var(--white);
+      color: var(--text-color-primary);
       padding-top: 16px;
       padding-left: 16px;
       margin-bottom: 10px;
@@ -307,10 +299,9 @@ p{
 
     p {
       font-style: normal;
-      font-weight: 400;
       font-size: 18px;
       line-height: 140%;
-      color: var(--white);
+      color: var(--text-color-primary);
       display: none;
       padding: 0 16px;
     }
@@ -323,14 +314,10 @@ p{
     max-width: 430px;
     width: 100%;
     height: 222px;
-    background-size: contain;
-    background-repeat: no-repeat;
     margin-bottom: 25px;
-
     &:hover {
-      background: var(--blue);
+      background: var(--text-color-active);
       border-radius: 13px;
-
       p {
         display: block;
       }
@@ -342,12 +329,9 @@ p{
     max-width: 280px;
     width: 100%;
     height: 220px;
-    background-size: cover;
-    background-repeat: no-repeat;
     margin-bottom: 25px;
-
     &:hover {
-      background: var(--blue);
+      background: var(--text-color-active);
       border-radius: 13px;
 
       p {
@@ -361,12 +345,9 @@ p{
     max-width: 280px;
     width: 100%;
     height: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
     margin-bottom: 25px;
-
     &:hover {
-      background: var(--blue);
+      background: var(--text-color-active);
       border-radius: 13px;
 
       p {
@@ -380,12 +361,9 @@ p{
     max-width: 430px;
     width: 100%;
     height: 125px;
-    background-size: cover;
-    background-repeat: no-repeat;
     margin-bottom: 25px;
-
     &:hover {
-      background: var(--blue);
+      background: var(--text-color-active);
       border-radius: 13px;
 
       p {
@@ -399,11 +377,8 @@ p{
     max-width: 430px;
     width: 100%;
     height: 125px;
-    background-size: cover;
-    background-repeat: no-repeat;
-
     &:hover {
-      background: var(--blue);
+      background: var(--text-color-active);
       border-radius: 13px;
 
       p {
@@ -419,9 +394,8 @@ p{
     height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
-
     &:hover {
-      background: var(--blue);
+      background: var(--text-color-active);
       border-radius: 13px;
 
       p {
@@ -442,7 +416,6 @@ p{
 
     h3 {
       font-style: normal;
-      font-weight: 400;
       font-size: 35px;
       line-height: 120%;
       text-transform: uppercase;
@@ -455,20 +428,16 @@ p{
       &:last-child {
         margin-top: 40px;
       }
-
-      color: var(--black);
-
+      color: var(--text-color-secondary);
       span {
-        color: var(--red);
+        color: var(--text-color-rare);
       }
     }
-
     p {
       font-style: normal;
-      font-weight: 400;
       font-size: 18px;
       line-height: 140%;
-      color: var(--black);
+      color: var(--text-color-secondary);
       margin-top: 20px;
 
     }
@@ -478,12 +447,9 @@ p{
     justify-content: space-between;
     margin-top: 27px;
     display: none;
-
     &.active {
       display: flex;
-
     }
-
   }
 
   &__customers-img {
@@ -491,20 +457,16 @@ p{
     max-width: 725px;
     width: 100%;
     height: 435px;
-    background-size: cover;
-    position: relative;
     margin-top: 80px;
-    @media (max-width: $mel-1260) {
+    @media (max-width: $xl) {
       display: none;
     }
-
   }
 
   &__customers-img-text-one {
     position: absolute;
     top: 32%;
     left: 14%;
-
     p {
       font-weight: 400;
       font-size: 30px;
@@ -525,20 +487,17 @@ p{
       font-size: 30px;
       line-height: 120%;
       color: #020D2B;
-
     }
   }
 
   &__customers-text {
     max-width: 430px;
     width: 100%;
-
     h3 {
-      font-weight: 400;
       font-size: 35px;
       line-height: 120%;
       text-transform: uppercase;
-      color: var(--black);
+      color: var(--text-color-secondary);
       @media (max-width: $md) {
         font-size: 30px;
       }
@@ -548,7 +507,7 @@ p{
       }
 
       span {
-        color: var(--red);
+        color: var(--text-color-rare);
         @media (max-width: $md) {
           font-size: 30px;
         }
@@ -556,10 +515,9 @@ p{
     }
 
     p {
-      font-weight: 400;
       font-size: 18px;
       line-height: 140%;
-      color: var(--black);
+      color: var(--text-color-secondary);
       margin-top: 20px;
       white-space: pre-line;
     }
@@ -571,7 +529,7 @@ p{
     max-width: 1200px;
     margin-top: 25px;
     justify-content: space-around;
-    @media (max-width: $mel-1260) {
+    @media (max-width: $xl) {
       display: none;
     }
   }
@@ -579,17 +537,16 @@ p{
   &__slide {
     margin-top: 90px;
     display: none;
-    @media (max-width:$el ) {
+    @media (max-width: $el) {
       display: block;
     }
 
     h3 {
-      font-weight: 400;
       font-size: 30px;
       line-height: 120%;
       display: flex;
       justify-content: center;
-      color: var(--black);
+      color: var(--text-color-secondary);
       text-transform: uppercase;
     }
   }
@@ -598,7 +555,7 @@ p{
     text-align: left;
     max-width: 290px;
     width: 100%;
-    background: var(--blue);
+    background: var(--text-color-active);
     padding: 16px;
     height: 447px;
     border-radius: 13px;
@@ -606,14 +563,13 @@ p{
 
     h3 {
       display: block;
-      font-weight: 400;
       font-size: 20px;
       line-height: 120%;
-      color: var(--white);
+      color: var(--text-color-primary);
     }
 
     p {
-      color: var(--white);
+      color: var(--text-color-primary);
       font-weight: 400;
       font-size: 16px;
       line-height: 140%;
@@ -625,15 +581,17 @@ p{
     @media (max-width: $el) {
       display: block;
     }
-p{
-  display: flex;
-  font-size: 16px;
-  line-height: 140%;
-}
-&>.next{
-color: var(--blue);
 
-}
+    p {
+      display: flex;
+      font-size: 16px;
+      line-height: 140%;
+    }
+
+    & > .next {
+      color: var(--text-color-active);
+
+    }
 
   }
 
@@ -654,10 +612,8 @@ color: var(--blue);
     max-width: 725px;
     width: 100%;
     height: 435px;
-    background-size: cover;
-    position: relative;
     margin-top: 80px;
-    @media (max-width: $mel-1260) {
+    @media (max-width: $xl) {
       display: none;
     }
 
@@ -680,29 +636,24 @@ color: var(--blue);
   &__loyalty-img-text {
     position: absolute;
     top: 32%;
-    right:7%;
+    right: 7%;
     display: block;
     text-align: right;
-
     p {
-      font-weight: 400;
       font-size: 30px;
       line-height: 120%;
       color: #020D2B;
-
     }
   }
 
   &__loyalty-text {
     max-width: 430px;
     width: 100%;
-
     h3 {
-      font-weight: 400;
       font-size: 35px;
       line-height: 120%;
       text-transform: uppercase;
-      color: var(--black);
+      color: var(--text-color-secondary);
       @media (max-width: $md) {
         font-size: 30px;
       }
@@ -712,7 +663,7 @@ color: var(--blue);
       }
 
       span {
-        color: var(--red);
+        color: var(--text-color-rare);
         @media (max-width: $md) {
           font-size: 30px;
         }
@@ -720,16 +671,13 @@ color: var(--blue);
     }
 
     p {
-      font-weight: 400;
       font-size: 18px;
       line-height: 140%;
-      color: var(--black);
+      color: var(--text-color-secondary);
       margin-top: 20px;
       white-space: pre-line;
     }
   }
-
-
 }
 
 .ons {
@@ -761,7 +709,6 @@ color: var(--blue);
     transform: rotate(180deg);
     margin-right: 15px;
   }
-
 }
 
 .next {
@@ -769,7 +716,7 @@ color: var(--blue);
   align-items: center;
   white-space: pre-line;
   justify-content: flex-end;
-  color: var(--blue);
+  color: var(--text-color-active);
   @media (max-width: $el) {
     display: flex;
   }
@@ -781,19 +728,20 @@ color: var(--blue);
     width: 16px;
     height: 27px;
   }
-
 }
-.text_h3{
+
+.text_h3 {
   margin-top: 25px;
 }
-.circle6{
+
+.circle6 {
   max-width: 500px;
   width: 100%;
   height: 490px;
   position: absolute;
   top: 2px;
   right: -119px;
-  border: 2px solid #E0E0F9;
+  border: 2px solid var(--bg-circle-two);
   border-radius: 50%;
   @media (max-width: $md) {
     max-width: 295px;
@@ -801,5 +749,8 @@ color: var(--blue);
     top: 570px;
     right: -125px;
   }
-
+}
+.imges{
+  background-size: cover;
+  background-repeat: no-repeat;
 }

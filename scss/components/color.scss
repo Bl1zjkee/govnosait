@@ -1,16 +1,15 @@
 :root {
-  --white: #FFFFFF;
-  --grey: #F5F5F5;
-  --blue: #2727FF;
-  --black: #020D2B;
-  --braun: #423A3A;
-  --red: #FF4343;
-  --light-white: #E0E0F9;
-  --dark: #1A243F;
-  --light-dark: rgba(62, 62, 62, 0.65);
-  --light-grey: #CCCCCC;
-  --greygrey: #ECECEC;
-
+  --text-color-primary: #FFFFFF;
+  --text-color-supportive: #F5F5F5;
+  --text-color-active: #2727FF;
+  --text-color-secondary: #020D2B;
+  --text-color-number: #423A3A;
+  --text-color-rare: #FF4343;
+  --text-color-light-primary: var(--bg-circle-two);
+  --text-color-dark: var(--bg-circle);
+  --text-color-light-dark: rgba(62, 62, 62, 0.65);
+  --text-color-light-supportive: #CCCCCC;
+  --text-color-supportiveg-support: #ECECEC;
   //buttons color
 
   --button-initial: #2727FF;
@@ -19,7 +18,9 @@
 
   //шрифты
   --fonts:'cera pro';
-  --inter:'Inter';
+  --inter:'inter';
 
-
+  //Круги фон
+  --bg-circle:#1A243F;
+  --bg-circle-two:var(--bg-circle-two);
 }

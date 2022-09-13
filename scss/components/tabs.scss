@@ -17,7 +17,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 105%;
-    color: var(--black);
+    color: var(--text-color-secondary);
     display: inline-block;
     margin-left: 65px;
     position: relative;
@@ -27,7 +27,7 @@
     }
 
     &.active {
-      color: var(--blue);
+      color: var(--text-color-active);
 
       &:before {
         display: block;
@@ -40,7 +40,7 @@
 
     &:before {
       content: '';
-      background: var(--blue);
+      background: var(--text-color-active);
       height: 4px;
       width: 100%;
       position: absolute;

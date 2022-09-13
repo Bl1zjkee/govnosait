@@ -1,5 +1,5 @@
 .work {
-  background: var(--black);
+  background: var(--text-color-secondary);
   display: flex;
   flex-wrap: wrap;
   padding: 90px 0 80px 0 ;
@@ -12,7 +12,7 @@
     font-size: 60px;
     line-height: 115%;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--text-color-primary);
   }
 
   @media (max-width: $md) {
@@ -36,11 +36,10 @@
     flex-basis: 50%;
     span{
       font-family: var(--inter);
-      font-weight: 400;
       font-size: 110px;
       line-height: 133px;
       text-transform: uppercase;
-      color: var(--braun);
+      color: var(--text-color-number);
       margin-top: 65px;
     }
     @media (max-width: $md) {
@@ -53,7 +52,7 @@
       font-size: 35px;
       line-height: 120%;
       width: 100%;
-      @media (max-width: $mel-1260) {
+      @media (max-width: $xl) {
         font-size: 20px;
       }
     }
@@ -81,10 +80,9 @@
         line-height: 140%;
         list-style: inherit;
         text-transform: none;
-        @media (max-width: $mel-1260) {
+        @media (max-width: $xl) {
           font-size: 15px;
         }
-
       }
     }
   }
@@ -97,7 +95,7 @@
    position: absolute;
    bottom: 33px;
    left: -75px;
-   border: 2px solid #1A243F;
+   border: 2px solid var(--bg-circle);
    border-radius: 50%;
  }
 .circle8{
@@ -107,7 +105,7 @@
   position: absolute;
   top: 19px;
   right: -120px;
-  border: 2px solid #1A243F;
+  border: 2px solid var(--bg-circle);
   border-radius: 50%;
   z-index: 0;
 }

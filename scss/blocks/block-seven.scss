@@ -1,28 +1,21 @@
 .application {
-  background: var(--white);
-padding: 90px 0 0 20px;
+  background: var(--text-color-primary);
+  padding: 90px 0 0 20px;
   position: relative;
-  @media (max-width: $sm) {
-
-  }
-
   h3 {
-    font-weight: 400;
     font-size: 60px;
     line-height: 115%;
     text-transform: uppercase;
-    color: var(--black);
+    color: var(--text-color-secondary);
 
-    @media (max-width: $mel-1260) {
+    @media (max-width: $xl) {
       font-size: 40px;
     }
-
   }
 
   &__inputs {
     margin-top: 31px;
     display: none;
-
     &.active {
       display: flex;;
     }
@@ -31,10 +24,8 @@ padding: 90px 0 0 20px;
   &__input {
     width: 100%;
   }
-
   &__img {
     display: flex;
-
     picture {
       img {
         max-width: 430px;
@@ -53,7 +44,6 @@ padding: 90px 0 0 20px;
           display: none;
         }
       }
-
     }
   }
 
@@ -64,7 +54,7 @@ padding: 90px 0 0 20px;
     &.active {
       display: flex;
       justify-content: space-between;
-      @media (max-width:$el ) {
+      @media (max-width: $el) {
         display: block;
       }
     }
@@ -75,16 +65,13 @@ padding: 90px 0 0 20px;
     max-width: 460px;
     width: 100%;
     margin-top: 38px;
-
     a {
       margin-bottom: 17px;
       display: flex;
-      font-weight: 400;
       font-size: 25px;
       line-height: 120%;
-      color: var(--black);
+      color: var(--text-color-secondary);
       align-items: center;
-
       &:nth-of-type(1) {
         &:before {
           content: '';
@@ -96,7 +83,6 @@ padding: 90px 0 0 20px;
           margin-right: 11px;
         }
       }
-
       &:nth-of-type(2) {
         &:before {
           content: '';
@@ -109,8 +95,7 @@ padding: 90px 0 0 20px;
 
         }
       }
-
-      &:nth-of-type(3) {
+      &:zth-of-type(3) {
         &:before {
           content: '';
           background-image: url("../icon/telephone.svg");
@@ -119,10 +104,8 @@ padding: 90px 0 0 20px;
           display: inline-flex;
           flex-shrink: 0;
           margin-right: 11px;
-
         }
       }
-
       &:nth-of-type(4) {
         &:before {
           content: '';
@@ -132,7 +115,6 @@ padding: 90px 0 0 20px;
           display: inline-flex;
           flex-shrink: 0;
           margin-right: 11px;
-
         }
       }
 
@@ -141,12 +123,13 @@ padding: 90px 0 0 20px;
   }
 
   &__map {
-margin-top: -220px;
+    margin-top: -220px;
     max-width: 625px;
     width: 100%;
     @media (max-width: $el) {
       margin-top: 0;
     }
+
     picture {
       img {
         max-width: 625px;
@@ -155,7 +138,7 @@ margin-top: -220px;
         position: absolute;
         right: 0;
         top: -245px;
-        @media (max-width: $mel-1260) {
+        @media (max-width: $xl) {
           top: -220px;
         }
         @media (max-width: $el) {
@@ -166,11 +149,9 @@ margin-top: -220px;
       }
 
       @media (max-width: $el) {
-   display: block;
-
+        display: block;
       }
     }
-
   }
 }
 

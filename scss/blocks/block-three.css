@@ -1,5 +1,5 @@
 .receive {
-  background: var(--grey);
+  background: var(--text-color-supportive);
 }
 .receive h3 {
   font-family: var(--fonts);
@@ -7,7 +7,7 @@
   font-weight: 400;
   font-size: 60px;
   line-height: 115%;
-  color: var(--black);
+  color: var(--text-color-secondary);
 }
 
 /*# sourceMappingURL=block-three.css.map */

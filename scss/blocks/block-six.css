@@ -1,5 +1,5 @@
 .integrations {
-  background: var(--black);
+  background: var(--text-color-secondary);
 }
 .integrations h3 {
   font-style: normal;
@@ -7,7 +7,7 @@
   font-size: 60px;
   line-height: 115%;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--text-color-primary);
 }
 
 /*# sourceMappingURL=block-six.css.map */
